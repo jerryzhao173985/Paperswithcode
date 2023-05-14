@@ -71,10 +71,14 @@ class PapersWithCode:
         os.makedirs("./static/papers/pdf", exist_ok=True)
         suffix = url.split('.')[-1].lower()
         filename = url.split('/')[-1] if name is None else f"{name}.{suffix}"
+        
         if filename.split('.')[-1].lower() in ['jpg', 'png', 'bmp', 'gif']:
             file_path = os.path.join("./static/papers/img", filename)
         elif filename.split('.')[-1].lower() in ['pdf']:
             file_path = os.path.join("./static/papers/pdf", filename)
+        else:
+            return -1
+        
         if os.path.exists(file_path):
             return 0
 
@@ -173,6 +177,7 @@ class PapersWithCode:
 if __name__ == "__main__":
     p = PapersWithCode()
     p.update()
+    print("Double check for newly updates and download completed!")
     p.update()
 
 

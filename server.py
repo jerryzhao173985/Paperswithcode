@@ -13,7 +13,7 @@ agent = PapersWithCode()
 
 @app.route("/pdf/<pdf_file>", methods=['GET'])
 def show_pdf(pdf_file):
-    return render_template("pdf.html", filename=pdf_file, header=f"http://192.168.23.101:8084")
+    return render_template("pdf.html", filename=pdf_file, header=f"http://127.0.0.1:8084")
 
 
 @app.route("/")

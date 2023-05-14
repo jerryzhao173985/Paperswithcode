@@ -1,117 +1,38 @@
 [
     {
-        "title": "DINOv2: Learning Robust Visual Features without Supervision",
-        "authors": "Maxime Oquab, Timoth\u00e9e Darcet, Th\u00e9o Moutakanni, Huy Vo, Marc Szafraniec, Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa, Alaaeldin El-Nouby, Mahmoud Assran, Nicolas Ballas, Wojciech Galuba, Russell Howes, Po-Yao Huang, Shang-Wen Li, Ishan Misra, Michael Rabbat, Vasu Sharma, Gabriel Synnaeve, Hu Xu, Herv\u00e9 Jegou, Julien Mairal, Patrick Labatut, Armand Joulin, Piotr Bojanowski",
-        "gitlab": "facebookresearch/dinov2",
-        "date": "14 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.07193.jpg",
-        "abstract": "The recent breakthroughs in natural language processing for model pretraining on large quantities of data have opened the way for similar foundation models in computer vision. These models could greatly simplify the use of images in any system by producing all-purpose visual features, i.e., features that work across image distributions and tasks without finetuning. This work shows that existing pretraining methods, especially self-supervised methods, can produce such features if trained on enough curated data from diverse sources. We revisit existing approaches and combine different techniques to scale our pretraining in terms of data and model size. Most of the technical contributions aim at accelerating and stabilizing the training at scale. In terms of data, we propose an automatic pipeline to build a dedicated, diverse, and curated image dataset instead of uncurated data, as typically done in the self-supervised literature. In terms of models, we train a ViT model (Dosovitskiy et al., 2020) with 1B parameters and distill it into a series of smaller models that surpass the best available all-purpose features, OpenCLIP (Ilharco et al., 2021) on most of the benchmarks at image and pixel levels.",
-        "strip_abstract": "The recent breakthroughs in natural language processing for model pretraining on large quantities of data have opened the way for similar foundation models in computer vision.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.07193v1.pdf",
-        "entity_stars": "3,013",
-        "stars_accumulated": "12.55 stars / hour",
+        "title": "ImageBind: One Embedding Space To Bind Them All",
+        "authors": "Rohit Girdhar, Alaaeldin El-Nouby, Zhuang Liu, Mannat Singh, Kalyan Vasudev Alwala, Armand Joulin, Ishan Misra",
+        "gitlab": "facebookresearch/imagebind",
+        "date": "9 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2305.05665.jpg",
+        "abstract": "We present ImageBind, an approach to learn a joint embedding across six different modalities - images, text, audio, depth, thermal, and IMU data. We show that all combinations of paired data are not necessary to train such a joint embedding, and only image-paired data is sufficient to bind the modalities together. ImageBind can leverage recent large scale vision-language models, and extends their zero-shot capabilities to new modalities just by using their natural pairing with images. It enables novel emergent applications 'out-of-the-box' including cross-modal retrieval, composing modalities with arithmetic, cross-modal detection and generation. The emergent capabilities improve with the strength of the image encoder and we set a new state-of-the-art on emergent zero-shot recognition tasks across modalities, outperforming specialist supervised models. Finally, we show strong few-shot recognition results outperforming prior work, and that ImageBind serves as a new way to evaluate vision models for visual and non-visual tasks.",
+        "strip_abstract": "We show that all combinations of paired data are not necessary to train such a joint embedding, and only image-paired data is sufficient to bind the modalities together.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.05665v1.pdf",
+        "entity_stars": "4,850",
+        "stars_accumulated": "13.53 stars / hour",
         "paper_task": [
-            "Depth Estimation",
-            "Domain Generalization",
-            "Fine-Grained Image Classification",
-            "Image Classification",
-            "Image Retrieval",
-            "Monocular Depth Estimation",
-            "Self-Supervised Image Classification",
-            "Semantic Segmentation"
+            "Cross-Modal Retrieval",
+            "Retrieval",
+            "Zero-Shot Learning"
         ],
         "code": [
-            "https://github.com/facebookresearch/dinov2"
+            "https://github.com/facebookresearch/imagebind"
         ]
     },
     {
-        "title": "Inpaint Anything: Segment Anything Meets Image Inpainting",
-        "authors": "Tao Yu, Runseng Feng, Ruoyu Feng, Jinming Liu, Xin Jin, Wenjun Zeng, Zhibo Chen",
-        "gitlab": "geekyutao/inpaint-anything",
-        "date": "13 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/bae2b66d-cfa1-4360-94f5-8bc076eb38a4.jpg",
-        "abstract": "Modern image inpainting systems, despite the significant progress, often struggle with mask selection and holes filling. Based on Segment-Anything Model (SAM), we make the first attempt to the mask-free image inpainting and propose a new paradigm of ``clicking and filling'', which is named as Inpaint Anything (IA). The core idea behind IA is to combine the strengths of different models in order to build a very powerful and user-friendly pipeline for solving inpainting-related problems. IA supports three main features: (i) Remove Anything: users could click on an object and IA will remove it and smooth the ``hole'' with the context; (ii) Fill Anything: after certain objects removal, users could provide text-based prompts to IA, and then it will fill the hole with the corresponding generative content via driving AIGC models like Stable Diffusion; (iii) Replace Anything: with IA, users have another option to retain the click-selected object and replace the remaining background with the newly generated scenes. We are also very willing to help everyone share and promote new projects based on our Inpaint Anything (IA). Our codes are available at https://github.com/geekyutao/Inpaint-Anything.",
-        "strip_abstract": "We are also very willing to help everyone share and promote new projects based on our Inpaint Anything (IA).",
-        "arxiv_url": "https://arxiv.org/pdf/2304.06790v1.pdf",
-        "entity_stars": "1,339",
-        "stars_accumulated": "6.39 stars / hour",
-        "paper_task": [
-            "Image Inpainting"
-        ],
+        "title": "Shap-E: Generating Conditional 3D Implicit Functions",
+        "authors": "Heewoo Jun, Alex Nichol",
+        "gitlab": "openai/shap-e",
+        "date": "3 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2305.02463.jpg",
+        "abstract": "We present Shap-E, a conditional generative model for 3D assets. Unlike recent work on 3D generative models which produce a single output representation, Shap-E directly generates the parameters of implicit functions that can be rendered as both textured meshes and neural radiance fields. We train Shap-E in two stages: first, we train an encoder that deterministically maps 3D assets into the parameters of an implicit function; second, we train a conditional diffusion model on outputs of the encoder. When trained on a large dataset of paired 3D and text data, our resulting models are capable of generating complex and diverse 3D assets in a matter of seconds. When compared to Point-E, an explicit generative model over point clouds, Shap-E converges faster and reaches comparable or better sample quality despite modeling a higher-dimensional, multi-representation output space. We release model weights, inference code, and samples at https://github.com/openai/shap-e.",
+        "strip_abstract": "We present Shap-E, a conditional generative model for 3D assets.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.02463v1.pdf",
+        "entity_stars": "7,833",
+        "stars_accumulated": "3.56 stars / hour",
+        "paper_task": [],
         "code": [
-            "https://github.com/geekyutao/inpaint-anything"
-        ]
-    },
-    {
-        "title": "A Method for Animating Children's Drawings of the Human Figure",
-        "authors": "Harrison Jesse Smith, Qingyuan Zheng, Yifei Li, Somya Jain, Jessica K. Hodgins",
-        "gitlab": "facebookresearch/AnimatedDrawings",
-        "date": "7 Mar 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/35417b49-e4ad-48af-8b6a-d605e4b08b24.gif",
-        "abstract": "Children's drawings have a wonderful inventiveness, creativity, and variety to them. We present a system that automatically animates children's drawings of the human figure, is robust to the variance inherent in these depictions, and is simple and straightforward enough for anyone to use. We demonstrate the value and broad appeal of our approach by building and releasing the Animated Drawings Demo, a freely available public website that has been used by millions of people around the world. We present a set of experiments exploring the amount of training data needed for fine-tuning, as well as a perceptual study demonstrating the appeal of a novel twisted perspective retargeting technique. Finally, we introduce the Amateur Drawings Dataset, a first-of-its-kind annotated dataset, collected via the public demo, containing over 178,000 amateur drawings and corresponding user-accepted character bounding boxes, segmentation masks, and joint location annotations.",
-        "strip_abstract": "Children's drawings have a wonderful inventiveness, creativity, and variety to them.",
-        "arxiv_url": "https://arxiv.org/pdf/2303.12741v2.pdf",
-        "entity_stars": "5,869",
-        "stars_accumulated": "4.22 stars / hour",
-        "paper_task": [
-            "Image to Video Generation"
-        ],
-        "code": [
-            "https://github.com/facebookresearch/AnimatedDrawings"
-        ]
-    },
-    {
-        "title": "Multimodal C4: An Open, Billion-scale Corpus of Images Interleaved With Text",
-        "authors": "Wanrong Zhu, Jack Hessel, Anas Awadalla, Samir Yitzhak Gadre, Jesse Dodge, Alex Fang, Youngjae Yu, Ludwig Schmidt, William Yang Wang, Yejin Choi",
-        "gitlab": "allenai/mmc4",
-        "date": "14 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/3a9fe21f-dc46-4dc2-b6d0-98fffa0cbdb1.jpg",
-        "abstract": "In-context vision and language models like Flamingo support arbitrarily interleaved sequences of images and text as input. This format not only enables few-shot learning via interleaving independent supervised (image, text) examples, but also, more complex prompts involving interaction between images, e.g., \"What do image A and image B have in common?\" To support this interface, pretraining occurs over web corpora that similarly contain interleaved images+text. To date, however, large-scale data of this form have not been publicly available. We release Multimodal C4 (mmc4), an augmentation of the popular text-only c4 corpus with images interleaved. We use a linear assignment algorithm to place images into longer bodies of text using CLIP features, a process that we show outperforms alternatives. mmc4 spans everyday topics like cooking, travel, technology, etc. A manual inspection of a random sample of documents shows that a vast majority (90%) of images are topically relevant, and that linear assignment frequently selects individual sentences specifically well-aligned with each image (78%). After filtering NSFW images, ads, etc., the corpus contains 103M documents containing 585M images interleaved with 43B English tokens.",
-        "strip_abstract": "We release Multimodal C4 (mmc4), an augmentation of the popular text-only c4 corpus with images interleaved.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.06939v1.pdf",
-        "entity_stars": "566",
-        "stars_accumulated": "3.46 stars / hour",
-        "paper_task": [
-            "Few-Shot Learning"
-        ],
-        "code": [
-            "https://github.com/allenai/mmc4"
-        ]
-    },
-    {
-        "title": "OpenAssistant Conversations -- Democratizing Large Language Model Alignment",
-        "authors": "Andreas K\u00f6pf, Yannic Kilcher, Dimitri von R\u00fctte, Sotiris Anagnostidis, Zhi-Rui Tam, Keith Stevens, Abdullah Barhoum, Nguyen Minh Duc, Oliver Stanley, Rich\u00e1rd Nagyfi, Shahul ES, Sameer Suri, David Glushkov, Arnav Dantuluri, Andrew Maguire, Christoph Schuhmann, Huu Nguyen, Alexander Mattick",
-        "gitlab": "laion-ai/open-assistant",
-        "date": "14 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.07327.jpg",
-        "abstract": "Aligning large language models (LLMs) with human preferences has proven to drastically improve usability and has driven rapid adoption as demonstrated by ChatGPT. Alignment techniques such as supervised fine-tuning (SFT) and reinforcement learning from human feedback (RLHF) greatly reduce the required skill and domain knowledge to effectively harness the capabilities of LLMs, increasing their accessibility and utility across various domains. However, state-of-the-art alignment techniques like RLHF rely on high-quality human feedback data, which is expensive to create and often remains proprietary. In an effort to democratize research on large-scale alignment, we release OpenAssistant Conversations, a human-generated, human-annotated assistant-style conversation corpus consisting of 161,443 messages distributed across 66,497 conversation trees, in 35 different languages, annotated with 461,292 quality ratings. The corpus is a product of a worldwide crowd-sourcing effort involving over 13,500 volunteers. To demonstrate the OpenAssistant Conversations dataset's effectiveness, we present OpenAssistant, the first fully open-source large-scale instruction-tuned model to be trained on human data. A preference study revealed that OpenAssistant replies are comparably preferred to GPT-3.5-turbo (ChatGPT) with a relative winrate of 48.3% vs. 51.7% respectively. We release our code and data under fully permissive licenses.",
-        "strip_abstract": "The corpus is a product of a worldwide crowd-sourcing effort involving over 13, 500 volunteers.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.07327v1.pdf",
-        "entity_stars": "28,708",
-        "stars_accumulated": "3.10 stars / hour",
-        "paper_task": [
-            "Language Modelling"
-        ],
-        "code": [
-            "https://github.com/laion-ai/open-assistant"
-        ]
-    },
-    {
-        "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Scale Language Model Society",
-        "authors": "Guohao Li, Hasan Abed Al Kader Hammoud, Hani Itani, Dmitrii Khizbullin, Bernard Ghanem",
-        "gitlab": "lightaime/camel",
-        "date": "31 Mar 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2303.17760.jpg",
-        "abstract": "The rapid advancement of conversational and chat-based language models has led to remarkable progress in complex task-solving. However, their success heavily relies on human input to guide the conversation, which can be challenging and time-consuming. This paper explores the potential of building scalable techniques to facilitate autonomous cooperation among communicative agents and provide insight into their \"cognitive\" processes. To address the challenges of achieving autonomous cooperation, we propose a novel communicative agent framework named role-playing. Our approach involves using inception prompting to guide chat agents toward task completion while maintaining consistency with human intentions. We showcase how role-playing can be used to generate conversational data for studying the behaviors and capabilities of chat agents, providing a valuable resource for investigating conversational language models. Our contributions include introducing a novel communicative agent framework, offering a scalable approach for studying the cooperative behaviors and capabilities of multi-agent systems, and open-sourcing our library to support research on communicative agents and beyond. The GitHub repository of this project is made publicly available on: https://github.com/lightaime/camel.",
-        "strip_abstract": "To address the challenges of achieving autonomous cooperation, we propose a novel communicative agent framework named role-playing.",
-        "arxiv_url": "https://arxiv.org/pdf/2303.17760v1.pdf",
-        "entity_stars": "1,626",
-        "stars_accumulated": "2.71 stars / hour",
-        "paper_task": [
-            "Language Modelling"
-        ],
-        "code": [
-            "https://github.com/lightaime/camel"
+            "https://github.com/openai/shap-e"
         ]
     },
     {
@@ -123,225 +44,360 @@
         "abstract": "Large Language Models (LLMs), such as the LLaMA model, have demonstrated their effectiveness in various general-domain natural language processing (NLP) tasks. Nevertheless, LLMs have not yet performed optimally in biomedical domain tasks due to the need for medical expertise in the responses. In response to this challenge, we propose HuaTuo, a LLaMA-based model that has been supervised-fine-tuned with generated QA (Question-Answer) instances. The experimental results demonstrate that HuaTuo generates responses that possess more reliable medical knowledge. Our proposed HuaTuo model is accessible at https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese.",
         "strip_abstract": "Large Language Models (LLMs), such as the LLaMA model, have demonstrated their effectiveness in various general-domain natural language processing (NLP) tasks.",
         "arxiv_url": "https://arxiv.org/pdf/2304.06975v1.pdf",
-        "entity_stars": "287",
-        "stars_accumulated": "2.15 stars / hour",
+        "entity_stars": "2,181",
+        "stars_accumulated": "3.11 stars / hour",
         "paper_task": [],
         "code": [
             "https://github.com/scir-hi/huatuo-llama-med-chinese"
         ]
     },
     {
-        "title": "Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models",
-        "authors": "Pan Lu, Baolin Peng, Hao Cheng, Michel Galley, Kai-Wei Chang, Ying Nian Wu, Song-Chun Zhu, Jianfeng Gao",
-        "gitlab": "lupantech/chameleon-llm",
-        "date": "19 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/4079b4d0-bc75-4518-bcce-58c3fbd62be7.jpg",
-        "abstract": "Large language models (LLMs) have achieved remarkable progress in various natural language processing tasks with emergent abilities. However, they face inherent limitations, such as an inability to access up-to-date information, utilize external tools, or perform precise mathematical reasoning. In this paper, we introduce Chameleon, a plug-and-play compositional reasoning framework that augments LLMs to help address these challenges. Chameleon synthesizes programs to compose various tools, including LLM models, off-the-shelf vision models, web search engines, Python functions, and rule-based modules tailored to user interests. Built on top of an LLM as a natural language planner, Chameleon infers the appropriate sequence of tools to compose and execute in order to generate a final response. We showcase the adaptability and effectiveness of Chameleon on two tasks: ScienceQA and TabMWP. Notably, Chameleon with GPT-4 achieves an 86.54% accuracy on ScienceQA, significantly improving upon the best published few-shot model by 11.37%; using GPT-4 as the underlying LLM, Chameleon achieves a 17.8% increase over the state-of-the-art model, leading to a 98.78% overall accuracy on TabMWP. Further studies suggest that using GPT-4 as a planner exhibits more consistent and rational tool selection and is able to infer potential constraints given the instructions, compared to other LLMs like ChatGPT.",
-        "strip_abstract": "Large language models (LLMs) have achieved remarkable progress in various natural language processing tasks with emergent abilities.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.09842v1.pdf",
-        "entity_stars": "68",
-        "stars_accumulated": "2.08 stars / hour",
-        "paper_task": [
-            "Mathematical Reasoning"
-        ],
-        "code": [
-            "https://github.com/lupantech/chameleon-llm"
-        ]
-    },
-    {
-        "title": "Consistency Models",
-        "authors": "Yang song, Prafulla Dhariwal, Mark Chen, Ilya Sutskever",
-        "gitlab": "openai/consistency_models",
-        "date": "2 Mar 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2303.01469.jpg",
-        "abstract": "Diffusion models have made significant breakthroughs in image, audio, and video generation, but they depend on an iterative generation process that causes slow sampling speed and caps their potential for real-time applications. To overcome this limitation, we propose consistency models, a new family of generative models that achieve high sample quality without adversarial training. They support fast one-step generation by design, while still allowing for few-step sampling to trade compute for sample quality. They also support zero-shot data editing, like image inpainting, colorization, and super-resolution, without requiring explicit training on these tasks. Consistency models can be trained either as a way to distill pre-trained diffusion models, or as standalone generative models. Through extensive experiments, we demonstrate that they outperform existing distillation techniques for diffusion models in one- and few-step generation. For example, we achieve the new state-of-the-art FID of 3.55 on CIFAR-10 and 6.20 on ImageNet 64x64 for one-step generation. When trained as standalone generative models, consistency models also outperform single-step, non-adversarial generative models on standard benchmarks like CIFAR-10, ImageNet 64x64 and LSUN 256x256.",
-        "strip_abstract": "To overcome this limitation, we propose consistency models, a new family of generative models that achieve high sample quality without adversarial training.",
-        "arxiv_url": "https://arxiv.org/pdf/2303.01469v1.pdf",
-        "entity_stars": "4,683",
-        "stars_accumulated": "1.91 stars / hour",
-        "paper_task": [
-            "Colorization",
-            "Image Inpainting",
-            "Super-Resolution",
-            "Video Generation"
-        ],
-        "code": [
-            "https://github.com/openai/consistency_models",
-            "https://github.com/junhsss/consistency-models",
-            "https://github.com/Kinyugo/consistency_models",
-            "https://github.com/sreerajr000/consistency-models"
-        ]
-    },
-    {
-        "title": "Tool Learning with Foundation Models",
-        "authors": "Yujia Qin, Shengding Hu, Yankai Lin, Weize Chen, Ning Ding, Ganqu Cui, Zheni Zeng, Yufei Huang, Chaojun Xiao, Chi Han, Yi Ren Fung, Yusheng Su, Huadong Wang, Cheng Qian, Runchu Tian, Kunlun Zhu, Shihao Liang, Xingyu Shen, Bokai Xu, Zhen Zhang, Yining Ye, Bowen Li, Ziwei Tang, Jing Yi, Yuzhang Zhu, Zhenning Dai, Lan Yan, Xin Cong, Yaxi Lu, Weilin Zhao, Yuxiang Huang, Junxi Yan, Xu Han, Xian Sun, Dahai Li, Jason Phang, Cheng Yang, Tongshuang Wu, Heng Ji, Zhiyuan Liu, Maosong Sun",
-        "gitlab": "openbmb/bmtools",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.08354.jpg",
-        "abstract": "Humans possess an extraordinary ability to create and utilize tools, allowing them to overcome physical limitations and explore new frontiers. With the advent of foundation models, AI systems have the potential to be equally adept in tool use as humans. This paradigm, i.e., tool learning with foundation models, combines the strengths of specialized tools and foundation models to achieve enhanced accuracy, efficiency, and automation in problem-solving. Despite its immense potential, there is still a lack of a comprehensive understanding of key challenges, opportunities, and future endeavors in this field. To this end, we present a systematic investigation of tool learning in this paper. We first introduce the background of tool learning, including its cognitive origins, the paradigm shift of foundation models, and the complementary roles of tools and models. Then we recapitulate existing tool learning research into tool-augmented and tool-oriented learning. We formulate a general tool learning framework: starting from understanding the user instruction, models should learn to decompose a complex task into several subtasks, dynamically adjust their plan through reasoning, and effectively conquer each sub-task by selecting appropriate tools. We also discuss how to train models for improved tool-use capabilities and facilitate the generalization in tool learning. Considering the lack of a systematic tool learning evaluation in prior works, we experiment with 17 representative tools and show the potential of current foundation models in skillfully utilizing tools. Finally, we discuss several open problems that require further investigation for tool learning. Overall, we hope this paper could inspire future research in integrating tools with foundation models.",
-        "strip_abstract": "Considering the lack of a systematic tool learning evaluation in prior works, we experiment with 17 representative tools and show the potential of current foundation models in skillfully utilizing tools.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.08354v1.pdf",
-        "entity_stars": "247",
-        "stars_accumulated": "1.85 stars / hour",
-        "paper_task": [],
-        "code": [
-            "https://github.com/openbmb/bmtools"
-        ]
-    },
-    {
-        "title": "Transformer-Based Visual Segmentation: A Survey",
-        "authors": "Xiangtai Li, Henghui Ding, Wenwei Zhang, Haobo Yuan, Jiangmiao Pang, Guangliang Cheng, Kai Chen, Ziwei Liu, Chen Change Loy",
-        "gitlab": "lxtgh/awesome-segmenation-with-transformer",
-        "date": "19 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.09854.jpg",
-        "abstract": "Visual segmentation seeks to partition images, video frames, or point clouds into multiple segments or groups. This technique has numerous real-world applications, such as autonomous driving, image editing, robot sensing, and medical analysis. Over the past decade, deep learning-based methods have made remarkable strides in this area. Recently, transformers, a type of neural network based on self-attention originally designed for natural language processing, have considerably surpassed previous convolutional or recurrent approaches in various vision processing tasks. Specifically, vision transformers offer robust, unified, and even simpler solutions for various segmentation tasks. This survey provides a thorough overview of transformer-based visual segmentation, summarizing recent advancements. We first review the background, encompassing problem definitions, datasets, and prior convolutional methods. Next, we summarize a meta-architecture that unifies all recent transformer-based approaches. Based on this meta-architecture, we examine various method designs, including modifications to the meta-architecture and associated applications. We also present several closely related settings, including 3D point cloud segmentation, foundation model tuning, domain-aware segmentation, efficient segmentation, and medical segmentation. Additionally, we compile and re-evaluate the reviewed methods on several well-established datasets. Finally, we identify open challenges in this field and propose directions for future research. The project page can be found at https://github.com/lxtGH/Awesome-Segmenation-With-Transformer. We will also continually monitor developments in this rapidly evolving field.",
-        "strip_abstract": "Recently, transformers, a type of neural network based on self-attention originally designed for natural language processing, have considerably surpassed previous convolutional or recurrent approaches in various vision processing tasks.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.09854v1.pdf",
-        "entity_stars": "53",
-        "stars_accumulated": "1.75 stars / hour",
-        "paper_task": [
-            "Autonomous Driving",
-            "Point Cloud Segmentation"
-        ],
-        "code": [
-            "https://github.com/lxtgh/awesome-segmenation-with-transformer"
-        ]
-    },
-    {
-        "title": "Segment Everything Everywhere All at Once",
-        "authors": "Xueyan Zou, Jianwei Yang, Hao Zhang, Feng Li, Linjie Li, Jianfeng Gao, Yong Jae Lee",
-        "gitlab": "ux-decoder/segment-everything-everywhere-all-at-once",
-        "date": "13 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/9a530dde-a1e9-4d41-84a1-3615def07248.jpg",
-        "abstract": "Despite the growing demand for interactive AI systems, there have been few comprehensive studies on human-AI interaction in visual understanding e.g. segmentation. Inspired by the development of prompt-based universal interfaces for LLMs, this paper presents SEEM, a promptable, interactive model for Segmenting Everything Everywhere all at once in an image. SEEM has four desiderata: i) Versatility: by introducing a versatile prompting engine for different types of prompts, including points, boxes, scribbles, masks, texts, and referred regions of another image; ii) Compositionality: by learning a joint visual-semantic space for visual and textual prompts to compose queries on the fly for inference as shown in Fig 1; iii)Interactivity: by incorporating learnable memory prompts to retain dialog history information via mask-guided cross-attention; and iv) Semantic-awareness: by using a text encoder to encode text queries and mask labels for open-vocabulary segmentation.",
-        "strip_abstract": "Inspired by the development of prompt-based universal interfaces for LLMs, this paper presents SEEM, a promptable, interactive model for Segmenting Everything Everywhere all at once in an image.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.06718v2.pdf",
-        "entity_stars": "916",
-        "stars_accumulated": "1.71 stars / hour",
-        "paper_task": [
-            "Semantic Segmentation"
-        ],
-        "code": [
-            "https://github.com/ux-decoder/segment-everything-everywhere-all-at-once"
-        ]
-    },
-    {
-        "title": "Text2Performer: Text-Driven Human Video Generation",
-        "authors": "Yuming Jiang, Shuai Yang, Tong Liang Koh, Wayne Wu, Chen Change Loy, Ziwei Liu",
-        "gitlab": "yumingj/text2performer",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/d1bb840e-1840-4ead-9482-a82c9fa4a9f0.jpg",
-        "abstract": "Text-driven content creation has evolved to be a transformative technique that revolutionizes creativity. Here we study the task of text-driven human video generation, where a video sequence is synthesized from texts describing the appearance and motions of a target performer. Compared to general text-driven video generation, human-centric video generation requires maintaining the appearance of synthesized human while performing complex motions. In this work, we present Text2Performer to generate vivid human videos with articulated motions from texts. Text2Performer has two novel designs: 1) decomposed human representation and 2) diffusion-based motion sampler. First, we decompose the VQVAE latent space into human appearance and pose representation in an unsupervised manner by utilizing the nature of human videos. In this way, the appearance is well maintained along the generated frames. Then, we propose continuous VQ-diffuser to sample a sequence of pose embeddings. Unlike existing VQ-based methods that operate in the discrete space, continuous VQ-diffuser directly outputs the continuous pose embeddings for better motion modeling. Finally, motion-aware masking strategy is designed to mask the pose embeddings spatial-temporally to enhance the temporal coherence. Moreover, to facilitate the task of text-driven human video generation, we contribute a Fashion-Text2Video dataset with manually annotated action labels and text descriptions. Extensive experiments demonstrate that Text2Performer generates high-quality human videos (up to 512x256 resolution) with diverse appearances and flexible motions.",
-        "strip_abstract": "In this work, we present Text2Performer to generate vivid human videos with articulated motions from texts.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.08483v1.pdf",
-        "entity_stars": "103",
-        "stars_accumulated": "1.68 stars / hour",
-        "paper_task": [
-            "Video Generation"
-        ],
-        "code": [
-            "https://github.com/yumingj/text2performer"
-        ]
-    },
-    {
-        "title": "Self-Instruct: Aligning Language Model with Self Generated Instructions",
-        "authors": "Yizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah A. Smith, Daniel Khashabi, Hannaneh Hajishirzi",
-        "gitlab": "databrickslabs/dolly",
-        "date": "20 Dec 2022",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2212.10560.jpg",
-        "abstract": "Large \"instruction-tuned\" language models (finetuned to respond to instructions) have demonstrated a remarkable ability to generalize zero-shot to new tasks. Nevertheless, they depend heavily on human-written instruction data that is limited in quantity, diversity, and creativity, therefore hindering the generality of the tuned model. We introduce Self-Instruct, a framework for improving the instruction-following capabilities of pretrained language models by bootstrapping off its own generations. Our pipeline generates instruction, input, and output samples from a language model, then prunes them before using them to finetune the original model. Applying our method to vanilla GPT3, we demonstrate a 33% absolute improvement over the original model on Super-NaturalInstructions, on par with the performance of InstructGPT_001, which is trained with private user data and human annotations. For further evaluation, we curate a set of expert-written instructions for novel tasks, and show through human evaluation that tuning GPT3 with Self-Instruct outperforms using existing public instruction datasets by a large margin, leaving only a 5% absolute gap behind InstructGPT_001. Self-Instruct provides an almost annotation-free method for aligning pre-trained language models with instructions, and we release our large synthetic dataset to facilitate future studies on instruction tuning.",
-        "strip_abstract": "Applying our method to vanilla GPT3, we demonstrate a 33% absolute improvement over the original model on Super-NaturalInstructions, on par with the performance of InstructGPT_001, which is trained with private user data and human annotations.",
-        "arxiv_url": "https://arxiv.org/pdf/2212.10560v1.pdf",
-        "entity_stars": "8,672",
-        "stars_accumulated": "1.51 stars / hour",
+        "title": "MultiModal-GPT: A Vision and Language Model for Dialogue with Humans",
+        "authors": "Tao Gong, Chengqi Lyu, Shilong Zhang, Yudong Wang, Miao Zheng, Qian Zhao, Kuikun Liu, Wenwei Zhang, Ping Luo, Kai Chen",
+        "gitlab": "open-mmlab/multimodal-gpt",
+        "date": "8 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/f6b5fe05-3198-4f0d-af3a-92f58761c9fa.jpg",
+        "abstract": "We present a vision and language model named MultiModal-GPT to conduct multi-round dialogue with humans. MultiModal-GPT can follow various instructions from humans, such as generating a detailed caption, counting the number of interested objects, and answering general questions from users. MultiModal-GPT is parameter-efficiently fine-tuned from OpenFlamingo, with Low-rank Adapter (LoRA) added both in the cross-attention part and the self-attention part of the language model. We first construct instruction templates with vision and language data for multi-modality instruction tuning to make the model understand and follow human instructions. We find the quality of training data is vital for the dialogue performance, where few data containing short answers can lead the model to respond shortly to any instructions. To further enhance the ability to chat with humans of the MultiModal-GPT, we utilize language-only instruction-following data to train the MultiModal-GPT jointly. The joint training of language-only and visual-language instructions with the \\emph{same} instruction template effectively improves dialogue performance. Various demos show the ability of continuous dialogue of MultiModal-GPT with humans. Code, dataset, and demo are at https://github.com/open-mmlab/Multimodal-GPT",
+        "strip_abstract": "To further enhance the ability to chat with humans of the MultiModal-GPT, we utilize language-only instruction-following data to train the MultiModal-GPT jointly.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.04790v2.pdf",
+        "entity_stars": "804",
+        "stars_accumulated": "2.43 stars / hour",
         "paper_task": [
             "Instruction Following",
             "Language Modelling"
         ],
         "code": [
-            "https://github.com/yizhongw/self-instruct",
-            "https://github.com/tatsu-lab/stanford_alpaca",
-            "https://github.com/databrickslabs/dolly",
-            "https://github.com/flagopen/flaginstruct"
+            "https://github.com/open-mmlab/multimodal-gpt"
         ]
     },
     {
-        "title": "Chinese Open Instruction Generalist: A Preliminary Release",
-        "authors": "Ge Zhang, Yemin Shi, Ruibo Liu, Ruibin Yuan, Yizhi Li, Siwei Dong, Yu Shu, Zhaoqun Li, Zekun Wang, Chenghua Lin, Wenhao Huang, Jie Fu",
-        "gitlab": "flagopen/flaginstruct",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.07987.jpg",
-        "abstract": "Instruction tuning is widely recognized as a key technique for building generalist language models, which has attracted the attention of researchers and the public with the release of InstructGPT~\\citep{ouyang2022training} and ChatGPT\\footnote{\\url{https://chat.openai.com/}}. Despite impressive progress in English-oriented large-scale language models (LLMs), it is still under-explored whether English-based foundation LLMs can perform similarly on multilingual tasks compared to English tasks with well-designed instruction tuning and how we can construct the corpora needed for the tuning. To remedy this gap, we propose the project as an attempt to create a Chinese instruction dataset by various methods adapted to the intrinsic characteristics of 4 sub-tasks. We collect around 200k Chinese instruction tuning samples, which have been manually checked to guarantee high quality. We also summarize the existing English and Chinese instruction corpora and briefly describe some potential applications of the newly constructed Chinese instruction corpora. The resulting \\textbf{C}hinese \\textbf{O}pen \\textbf{I}nstruction \\textbf{G}eneralist (\\textbf{COIG}) corpora are available in Huggingface\\footnote{\\url{https://huggingface.co/datasets/BAAI/COIG}} and Github\\footnote{\\url{https://github.com/FlagOpen/FlagInstruct}}, and will be continuously updated.",
-        "strip_abstract": "Instruction tuning is widely recognized as a key technique for building generalist language models, which has attracted the attention of researchers and the public with the release of InstructGPT~\\citep{ouyang2022training} and ChatGPT\\footnote{\\url{https://chat. openai. com/}}.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.07987v2.pdf",
-        "entity_stars": "80",
-        "stars_accumulated": "1.40 stars / hour",
-        "paper_task": [],
-        "code": [
-            "https://github.com/flagopen/flaginstruct"
-        ]
-    },
-    {
-        "title": "LongForm: Optimizing Instruction Tuning for Long Text Generation with Corpus Extraction",
-        "authors": "Abdullatif K\u00f6ksal, Timo Schick, Anna Korhonen, Hinrich Sch\u00fctze",
-        "gitlab": "akoksal/longform",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.08460.jpg",
-        "abstract": "Instruction tuning enables language models to generalize more effectively and better follow user intent. However, obtaining instruction data can be costly and challenging. Prior works employ methods such as expensive human annotation, crowd-sourced datasets with alignment issues, or generating noisy examples via LLMs. We introduce the LongForm dataset, which is created by leveraging English corpus examples with augmented instructions. We select a diverse set of human-written documents from existing corpora such as C4 and Wikipedia and generate instructions for the given documents via LLMs. This approach provides a cheaper and cleaner instruction-tuning dataset and one suitable for long text generation. We finetune T5, OPT, and LLaMA models on our dataset and show that even smaller LongForm models have good generalization capabilities for text generation. Our models outperform 10x larger language models without instruction tuning on various tasks such as story/recipe generation and long-form question answering. Moreover, LongForm models outperform prior instruction-tuned models such as FLAN-T5 and Alpaca by a large margin. Finally, our models can effectively follow and answer multilingual instructions; we demonstrate this for news generation. We publicly release our data and models: https://github.com/akoksal/LongForm.",
-        "strip_abstract": "Our models outperform 10x larger language models without instruction tuning on various tasks such as story/recipe generation and long-form question answering.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.08460v1.pdf",
-        "entity_stars": "80",
-        "stars_accumulated": "1.35 stars / hour",
+        "title": "InternGPT: Solving Vision-Centric Tasks by Interacting with ChatGPT Beyond Language",
+        "authors": "Zhaoyang Liu, Yinan He, Wenhai Wang, Weiyun Wang, Yi Wang, Shoufa Chen, Qinglong Zhang, Yang Yang, Qingyun Li, Jiashuo Yu, Kunchang Li, Zhe Chen, Xue Yang, Xizhou Zhu, Yali Wang, LiMin Wang, Ping Luo, Jifeng Dai, Yu Qiao",
+        "gitlab": "opengvlab/internchat",
+        "date": "9 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/92fc3441-b428-43e4-a0eb-bd38935d6cb8.jpg",
+        "abstract": "We present an interactive visual framework named InternGPT, or iGPT for short. The framework integrates chatbots that have planning and reasoning capabilities, such as ChatGPT, with non-verbal instructions like pointing movements that enable users to directly manipulate images or videos on the screen. Pointing (including gestures, cursors, etc.) movements can provide more flexibility and precision in performing vision-centric tasks that require fine-grained control, editing, and generation of visual content. The name InternGPT stands for \\textbf{inter}action, \\textbf{n}onverbal, and \\textbf{chat}bots. Different from existing interactive systems that rely on pure language, by incorporating pointing instructions, the proposed iGPT significantly improves the efficiency of communication between users and chatbots, as well as the accuracy of chatbots in vision-centric tasks, especially in complicated visual scenarios where the number of objects is greater than 2. Additionally, in iGPT, an auxiliary control mechanism is used to improve the control capability of LLM, and a large vision-language model termed Husky is fine-tuned for high-quality multi-modal dialogue (impressing ChatGPT-3.5-turbo with 93.89\\% GPT-4 Quality). We hope this work can spark new ideas and directions for future interactive visual systems. Welcome to watch the code at https://github.com/OpenGVLab/InternGPT.",
+        "strip_abstract": "Different from existing interactive systems that rely on pure language, by incorporating pointing instructions, the proposed iGPT significantly improves the efficiency of communication between users and chatbots, as well as the accuracy of chatbots in vision-centric tasks, especially in complicated visual scenarios where the number of objects is greater than 2.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.05662v3.pdf",
+        "entity_stars": "307",
+        "stars_accumulated": "2.24 stars / hour",
         "paper_task": [
+            "Language Modelling"
+        ],
+        "code": [
+            "https://github.com/opengvlab/interngpt",
+            "https://github.com/opengvlab/internchat"
+        ]
+    },
+    {
+        "title": "WebCPM: Interactive Web Search for Chinese Long-form Question Answering",
+        "authors": "Yujia Qin, Zihan Cai, Dian Jin, Lan Yan, Shihao Liang, Kunlun Zhu, Yankai Lin, Xu Han, Ning Ding, Huadong Wang, Ruobing Xie, Fanchao Qi, Zhiyuan Liu, Maosong Sun, Jie zhou",
+        "gitlab": "thunlp/webcpm",
+        "date": "11 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/d7eeb417-fbd4-4a64-8667-08070af3d37f.jpg",
+        "abstract": "Long-form question answering (LFQA) aims at answering complex, open-ended questions with detailed, paragraph-length responses. The de facto paradigm of LFQA necessitates two procedures: information retrieval, which searches for relevant supporting facts, and information synthesis, which integrates these facts into a coherent answer. In this paper, we introduce WebCPM, the first Chinese LFQA dataset. One unique feature of WebCPM is that its information retrieval is based on interactive web search, which engages with a search engine in real time. Following WebGPT, we develop a web search interface. We recruit annotators to search for relevant information using our interface and then answer questions. Meanwhile, the web search behaviors of our annotators would be recorded. In total, we collect 5,500 high-quality question-answer pairs, together with 14,315 supporting facts and 121,330 web search actions. We fine-tune pre-trained language models to imitate human behaviors for web search and to generate answers based on the collected facts. Our LFQA pipeline, built on these fine-tuned models, generates answers that are no worse than human-written ones in 32.5% and 47.5% of the cases on our dataset and DuReader, respectively.",
+        "strip_abstract": "We recruit annotators to search for relevant information using our interface and then answer questions.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.06849v1.pdf",
+        "entity_stars": "157",
+        "stars_accumulated": "2.08 stars / hour",
+        "paper_task": [
+            "Information Retrieval",
             "Long Form Question Answering",
-            "News Generation",
             "Question Answering",
-            "Recipe Generation",
+            "Retrieval"
+        ],
+        "code": [
+            "https://github.com/thunlp/webcpm"
+        ]
+    },
+    {
+        "title": "Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures",
+        "authors": "Gal Metzer, Elad Richardson, Or Patashnik, Raja Giryes, Daniel Cohen-Or",
+        "gitlab": "threestudio-project/threestudio",
+        "date": "14 Nov 2022",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/e3ab7c3f-f1f0-40bc-9fd5-b861e6221d3b.jpg",
+        "abstract": "Text-guided image generation has progressed rapidly in recent years, inspiring major breakthroughs in text-guided shape generation. Recently, it has been shown that using score distillation, one can successfully text-guide a NeRF model to generate a 3D object. We adapt the score distillation to the publicly available, and computationally efficient, Latent Diffusion Models, which apply the entire diffusion process in a compact latent space of a pretrained autoencoder. As NeRFs operate in image space, a naive solution for guiding them with latent score distillation would require encoding to the latent space at each guidance step. Instead, we propose to bring the NeRF to the latent space, resulting in a Latent-NeRF. Analyzing our Latent-NeRF, we show that while Text-to-3D models can generate impressive results, they are inherently unconstrained and may lack the ability to guide or enforce a specific 3D structure. To assist and direct the 3D generation, we propose to guide our Latent-NeRF using a Sketch-Shape: an abstract geometry that defines the coarse structure of the desired object. Then, we present means to integrate such a constraint directly into a Latent-NeRF. This unique combination of text and shape guidance allows for increased control over the generation process. We also show that latent score distillation can be successfully applied directly on 3D meshes. This allows for generating high-quality textures on a given geometry. Our experiments validate the power of our different forms of guidance and the efficiency of using latent rendering. Implementation is available at https://github.com/eladrich/latent-nerf",
+        "strip_abstract": "This unique combination of text and shape guidance allows for increased control over the generation process.",
+        "arxiv_url": "https://arxiv.org/pdf/2211.07600v1.pdf",
+        "entity_stars": "560",
+        "stars_accumulated": "1.78 stars / hour",
+        "paper_task": [
+            "Image Generation",
+            "Text to 3D"
+        ],
+        "code": [
+            "https://github.com/eladrich/latent-nerf",
+            "https://github.com/threestudio-project/threestudio"
+        ]
+    },
+    {
+        "title": "Personalize Segment Anything Model with One Shot",
+        "authors": "Renrui Zhang, Zhengkai Jiang, Ziyu Guo, Shilin Yan, Junting Pan, Hao Dong, Peng Gao, Hongsheng Li",
+        "gitlab": "zrrskywalker/personalize-sam",
+        "date": "4 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/2e309c41-62c7-4915-9e2e-8597ad341b7c.jpg",
+        "abstract": "Driven by large-data pre-training, Segment Anything Model (SAM) has been demonstrated as a powerful and promptable framework, revolutionizing the segmentation models. Despite the generality, customizing SAM for specific visual concepts without man-powered prompting is under explored, e.g., automatically segmenting your pet dog in different images. In this paper, we propose a training-free Personalization approach for SAM, termed as PerSAM. Given only a single image with a reference mask, PerSAM first localizes the target concept by a location prior, and segments it within other images or videos via three techniques: target-guided attention, target-semantic prompting, and cascaded post-refinement. In this way, we effectively adapt SAM for private use without any training. To further alleviate the mask ambiguity, we present an efficient one-shot fine-tuning variant, PerSAM-F. Freezing the entire SAM, we introduce two learnable weights for multi-scale masks, only training 2 parameters within 10 seconds for improved performance. To demonstrate our efficacy, we construct a new segmentation dataset, PerSeg, for personalized evaluation, and test our methods on video object segmentation with competitive performance. Besides, our approach can also enhance DreamBooth to personalize Stable Diffusion for text-to-image generation, which discards the background disturbance for better target appearance learning. Code is released at https://github.com/ZrrSkywalker/Personalize-SAM",
+        "strip_abstract": "Driven by large-data pre-training, Segment Anything Model (SAM) has been demonstrated as a powerful and promptable framework, revolutionizing the segmentation models.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.03048v1.pdf",
+        "entity_stars": "709",
+        "stars_accumulated": "1.49 stars / hour",
+        "paper_task": [
+            "Image Generation",
+            "Semantic Segmentation",
+            "Text-to-Image Generation",
+            "Video Object Segmentation",
+            "Video Semantic Segmentation"
+        ],
+        "code": [
+            "https://github.com/zrrskywalker/personalize-sam"
+        ]
+    },
+    {
+        "title": "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond",
+        "authors": "Jingfeng Yang, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming Jiang, Bing Yin, Xia Hu",
+        "gitlab": "mooler0410/llmspracticalguide",
+        "date": "26 Apr 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/16d0f450-e5e7-4471-9a8b-42727da19551.gif",
+        "abstract": "This paper presents a comprehensive and practical guide for practitioners and end-users working with Large Language Models (LLMs) in their downstream natural language processing (NLP) tasks. We provide discussions and insights into the usage of LLMs from the perspectives of models, data, and downstream tasks. Firstly, we offer an introduction and brief summary of current GPT- and BERT-style LLMs. Then, we discuss the influence of pre-training data, training data, and test data. Most importantly, we provide a detailed discussion about the use and non-use cases of large language models for various natural language processing tasks, such as knowledge-intensive tasks, traditional natural language understanding tasks, natural language generation tasks, emergent abilities, and considerations for specific tasks.We present various use cases and non-use cases to illustrate the practical applications and limitations of LLMs in real-world scenarios. We also try to understand the importance of data and the specific challenges associated with each NLP task. Furthermore, we explore the impact of spurious biases on LLMs and delve into other essential considerations, such as efficiency, cost, and latency, to ensure a comprehensive understanding of deploying LLMs in practice. This comprehensive guide aims to provide researchers and practitioners with valuable insights and best practices for working with LLMs, thereby enabling the successful implementation of these models in a wide range of NLP tasks. A curated list of practical guide resources of LLMs, regularly updated, can be found at \\url{https://github.com/Mooler0410/LLMsPracticalGuide}.",
+        "strip_abstract": "This paper presents a comprehensive and practical guide for practitioners and end-users working with Large Language Models (LLMs) in their downstream natural language processing (NLP) tasks.",
+        "arxiv_url": "https://arxiv.org/pdf/2304.13712v2.pdf",
+        "entity_stars": "3,631",
+        "stars_accumulated": "1.11 stars / hour",
+        "paper_task": [
+            "Language Modelling",
+            "Natural Language Understanding",
             "Text Generation"
         ],
         "code": [
-            "https://github.com/akoksal/longform"
+            "https://github.com/mooler0410/llmspracticalguide"
         ]
     },
     {
-        "title": "SiLK -- Simple Learned Keypoints",
-        "authors": "Pierre Gleize, Weiyao Wang, Matt Feiszli",
-        "gitlab": "facebookresearch/silk",
-        "date": "12 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/3c64c54a-4543-4209-b7e4-87084659c453.jpg",
-        "abstract": "Keypoint detection & descriptors are foundational tech-nologies for computer vision tasks like image matching, 3D reconstruction and visual odometry. Hand-engineered methods like Harris corners, SIFT, and HOG descriptors have been used for decades; more recently, there has been a trend to introduce learning in an attempt to improve keypoint detectors. On inspection however, the results are difficult to interpret; recent learning-based methods employ a vast diversity of experimental setups and design choices: empirical results are often reported using different backbones, protocols, datasets, types of supervisions or tasks. Since these differences are often coupled together, it raises a natural question on what makes a good learned keypoint detector. In this work, we revisit the design of existing keypoint detectors by deconstructing their methodologies and identifying the key components. We re-design each component from first-principle and propose Simple Learned Keypoints (SiLK) that is fully-differentiable, lightweight, and flexible. Despite its simplicity, SiLK advances new state-of-the-art on Detection Repeatability and Homography Estimation tasks on HPatches and 3D Point-Cloud Registration task on ScanNet, and achieves competitive performance to state-of-the-art on camera pose estimation in 2022 Image Matching Challenge and ScanNet.",
-        "strip_abstract": "Keypoint detection & descriptors are foundational tech-nologies for computer vision tasks like image matching, 3D reconstruction and visual odometry.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.06194v1.pdf",
-        "entity_stars": "316",
-        "stars_accumulated": "1.26 stars / hour",
+        "title": "Principle-Driven Self-Alignment of Language Models from Scratch with Minimal Human Supervision",
+        "authors": "Zhiqing Sun, Yikang Shen, Qinhong Zhou, Hongxin Zhang, Zhenfang Chen, David Cox, Yiming Yang, Chuang Gan",
+        "gitlab": "IBM/Dromedary",
+        "date": "4 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/79dce5b1-b99c-42b8-9d74-1ff8948d6356.jpg",
+        "abstract": "Recent AI-assistant agents, such as ChatGPT, predominantly rely on supervised fine-tuning (SFT) with human annotations and reinforcement learning from human feedback (RLHF) to align the output of large language models (LLMs) with human intentions, ensuring they are helpful, ethical, and reliable. However, this dependence can significantly constrain the true potential of AI-assistant agents due to the high cost of obtaining human supervision and the related issues on quality, reliability, diversity, self-consistency, and undesirable biases. To address these challenges, we propose a novel approach called SELF-ALIGN, which combines principle-driven reasoning and the generative power of LLMs for the self-alignment of AI agents with minimal human supervision. Our approach encompasses four stages: first, we use an LLM to generate synthetic prompts, and a topic-guided method to augment the prompt diversity; second, we use a small set of human-written principles for AI models to follow, and guide the LLM through in-context learning from demonstrations (of principles application) to produce helpful, ethical, and reliable responses to user's queries; third, we fine-tune the original LLM with the high-quality self-aligned responses so that the resulting model can generate desirable responses for each query directly without the principle set and the demonstrations anymore; and finally, we offer a refinement step to address the issues of overly-brief or indirect responses. Applying SELF-ALIGN to the LLaMA-65b base language model, we develop an AI assistant named Dromedary. With fewer than 300 lines of human annotations (including < 200 seed prompts, 16 generic principles, and 5 exemplars for in-context learning). Dromedary significantly surpasses the performance of several state-of-the-art AI systems, including Text-Davinci-003 and Alpaca, on benchmark datasets with various settings.",
+        "strip_abstract": "Recent AI-assistant agents, such as ChatGPT, predominantly rely on supervised fine-tuning (SFT) with human annotations and reinforcement learning from human feedback (RLHF) to align the output of large language models (LLMs) with human intentions, ensuring they are helpful, ethical, and reliable.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.03047v1.pdf",
+        "entity_stars": "688",
+        "stars_accumulated": "1.03 stars / hour",
         "paper_task": [
-            "3D Reconstruction",
-            "Homography Estimation",
-            "Keypoint Detection",
-            "Point Cloud Registration",
-            "Pose Estimation",
-            "Visual Odometry"
+            "Language Modelling"
         ],
         "code": [
-            "https://github.com/facebookresearch/silk"
+            "https://github.com/IBM/Dromedary"
         ]
     },
     {
-        "title": "Understanding INT4 Quantization for Transformer Models: Latency Speedup, Composability, and Failure Cases",
-        "authors": "Xiaoxia Wu, Cheng Li, Reza Yazdani Aminabadi, Zhewei Yao, Yuxiong He",
-        "gitlab": "microsoft/DeepSpeed",
-        "date": "27 Jan 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/0983e99e-2e50-4ddc-9552-8035a51fc128.jpg",
-        "abstract": "Improving the deployment efficiency of transformer-based language models has been challenging given their high computation and memory cost. While INT8 quantization has recently been shown to be effective in reducing both the memory cost and latency while preserving model accuracy, it remains unclear whether we can leverage INT4 (which doubles peak hardware throughput) to achieve further latency improvement. In this work, we fully investigate the feasibility of using INT4 quantization for language models, and show that using INT4 introduces no or negligible accuracy degradation for encoder-only and encoder-decoder models, but causes a significant accuracy drop for decoder-only models. To materialize the performance gain using INT4, we develop a highly-optimized end-to-end INT4 encoder inference pipeline supporting different quantization strategies. Our INT4 pipeline is $8.5\\times$ faster for latency-oriented scenarios and up to $3\\times$ for throughput-oriented scenarios compared to the inference of FP16, and improves the SOTA BERT INT8 performance from FasterTransformer by up to $1.7\\times$. We also provide insights into the failure cases when applying INT4 to decoder-only models, and further explore the compatibility of INT4 quantization with other compression techniques, like pruning and layer reduction.",
-        "strip_abstract": "Improving the deployment efficiency of transformer-based language models has been challenging given their high computation and memory cost.",
-        "arxiv_url": "https://arxiv.org/pdf/2301.12017v1.pdf",
-        "entity_stars": "21,884",
-        "stars_accumulated": "1.25 stars / hour",
+        "title": "iDisc: Internal Discretization for Monocular Depth Estimation",
+        "authors": "Luigi Piccinelli, Christos Sakaridis, Fisher Yu",
+        "gitlab": "SysCV/idisc",
+        "date": "13 Apr 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/7998a93b-c6ce-4387-b1a0-e63962fe327b.jpg",
+        "abstract": "Monocular depth estimation is fundamental for 3D scene understanding and downstream applications. However, even under the supervised setup, it is still challenging and ill-posed due to the lack of full geometric constraints. Although a scene can consist of millions of pixels, there are fewer high-level patterns. We propose iDisc to learn those patterns with internal discretized representations. The method implicitly partitions the scene into a set of high-level patterns. In particular, our new module, Internal Discretization (ID), implements a continuous-discrete-continuous bottleneck to learn those concepts without supervision. In contrast to state-of-the-art methods, the proposed model does not enforce any explicit constraints or priors on the depth output. The whole network with the ID module can be trained end-to-end, thanks to the bottleneck module based on attention. Our method sets the new state of the art with significant improvements on NYU-Depth v2 and KITTI, outperforming all published methods on the official KITTI benchmark. iDisc can also achieve state-of-the-art results on surface normal estimation. Further, we explore the model generalization capability via zero-shot testing. We observe the compelling need to promote diversification in the outdoor scenario. Hence, we introduce splits of two autonomous driving datasets, DDAD and Argoverse. Code is available at http://vis.xyz/pub/idisc .",
+        "strip_abstract": "Our method sets the new state of the art with significant improvements on NYU-Depth v2 and KITTI, outperforming all published methods on the official KITTI benchmark.",
+        "arxiv_url": "https://arxiv.org/pdf/2304.06334v1.pdf",
+        "entity_stars": "106",
+        "stars_accumulated": "1.02 stars / hour",
         "paper_task": [
-            "Quantization"
+            "Autonomous Driving",
+            "Depth Estimation",
+            "Monocular Depth Estimation",
+            "Scene Understanding",
+            "Surface Normal Estimation",
+            "Surface Normals Estimation"
         ],
         "code": [
-            "https://github.com/microsoft/DeepSpeed"
+            "https://github.com/SysCV/idisc"
+        ]
+    },
+    {
+        "title": "Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models",
+        "authors": "Lei Wang, Wanyu Xu, Yihuai Lan, Zhiqiang Hu, Yunshi Lan, Roy Ka-Wei Lee, Ee-Peng Lim",
+        "gitlab": "agi-edgerunners/plan-and-solve-prompting",
+        "date": "6 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/17426cda-2afa-406d-b3d9-0f5e4e02d8c4.jpg",
+        "abstract": "Large language models (LLMs) have recently been shown to deliver impressive performance in various NLP tasks. To tackle multi-step reasoning tasks, few-shot chain-of-thought (CoT) prompting includes a few manually crafted step-by-step reasoning demonstrations which enable LLMs to explicitly generate reasoning steps and improve their reasoning task accuracy. To eliminate the manual effort, Zero-shot-CoT concatenates the target problem statement with \"Let's think step by step\" as an input prompt to LLMs. Despite the success of Zero-shot-CoT, it still suffers from three pitfalls: calculation errors, missing-step errors, and semantic misunderstanding errors. To address the missing-step errors, we propose Plan-and-Solve (PS) Prompting. It consists of two components: first, devising a plan to divide the entire task into smaller subtasks, and then carrying out the subtasks according to the plan. To address the calculation errors and improve the quality of generated reasoning steps, we extend PS prompting with more detailed instructions and derive PS+ prompting. We evaluate our proposed prompting strategy on ten datasets across three reasoning problems. The experimental results over GPT-3 show that our proposed zero-shot prompting consistently outperforms Zero-shot-CoT across all datasets by a large margin, is comparable to or exceeds Zero-shot-Program-of-Thought Prompting, and has comparable performance with 8-shot CoT prompting on the math reasoning problem. The code can be found at https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting.",
+        "strip_abstract": "To address the calculation errors and improve the quality of generated reasoning steps, we extend PS prompting with more detailed instructions and derive PS+ prompting.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.04091v1.pdf",
+        "entity_stars": "99",
+        "stars_accumulated": "1.01 stars / hour",
+        "paper_task": [],
+        "code": [
+            "https://github.com/agi-edgerunners/plan-and-solve-prompting"
+        ]
+    },
+    {
+        "title": "U$^2$-Net: Going Deeper with Nested U-Structure for Salient Object Detection",
+        "authors": "Xuebin Qin, Zichen Zhang, Chenyang Huang, Masood Dehghan, Osmar R. Zaiane, Martin Jagersand",
+        "gitlab": "nadermx/backgroundremover",
+        "date": "18 May 2020",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/pgr-0001807202-aa87ced9.gif",
+        "abstract": "In this paper, we design a simple yet powerful deep network architecture, U$^2$-Net, for salient object detection (SOD). The architecture of our U$^2$-Net is a two-level nested U-structure. The design has the following advantages: (1) it is able to capture more contextual information from different scales thanks to the mixture of receptive fields of different sizes in our proposed ReSidual U-blocks (RSU), (2) it increases the depth of the whole architecture without significantly increasing the computational cost because of the pooling operations used in these RSU blocks. This architecture enables us to train a deep network from scratch without using backbones from image classification tasks. We instantiate two models of the proposed architecture, U$^2$-Net (176.3 MB, 30 FPS on GTX 1080Ti GPU) and U$^2$-Net$^{\\dagger}$ (4.7 MB, 40 FPS), to facilitate the usage in different environments. Both models achieve competitive performance on six SOD datasets. The code is available: https://github.com/NathanUA/U-2-Net.",
+        "strip_abstract": "In this paper, we design a simple yet powerful deep network architecture, U$^2$-Net, for salient object detection (SOD).",
+        "arxiv_url": "https://arxiv.org/pdf/2005.09007v3.pdf",
+        "entity_stars": "4,182",
+        "stars_accumulated": "0.96 stars / hour",
+        "paper_task": [
+            "Dichotomous Image Segmentation",
+            "Image Classification",
+            "Object Detection",
+            "RGB Salient Object Detection",
+            "Saliency Detection",
+            "Salient Object Detection"
+        ],
+        "code": [
+            "https://github.com/NathanUA/U-2-Net",
+            "https://github.com/PaddlePaddle/PaddleSeg",
+            "https://github.com/xuebinqin/U-2-Net",
+            "https://github.com/lucidrains/imagen-pytorch",
+            "https://github.com/nadermx/backgroundremover"
+        ]
+    },
+    {
+        "title": "Active Retrieval Augmented Generation",
+        "authors": "Zhengbao Jiang, Frank F. Xu, Luyu Gao, Zhiqing Sun, Qian Liu, Jane Dwivedi-Yu, Yiming Yang, Jamie Callan, Graham Neubig",
+        "gitlab": "jzbjyb/flare",
+        "date": "11 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2305.06983.jpg",
+        "abstract": "Despite the remarkable ability of large language models (LMs) to comprehend and generate language, they have a tendency to hallucinate and create factually inaccurate output. Augmenting LMs by retrieving information from external knowledge resources is one promising solution. Most existing retrieval-augmented LMs employ a retrieve-and-generate setup that only retrieves information once based on the input. This is limiting, however, in more general scenarios involving generation of long texts, where continually gathering information throughout the generation process is essential. There have been some past efforts to retrieve information multiple times while generating outputs, which mostly retrieve documents at fixed intervals using the previous context as queries. In this work, we provide a generalized view of active retrieval augmented generation, methods that actively decide when and what to retrieve across the course of the generation. We propose Forward-Looking Active REtrieval augmented generation (FLARE), a generic retrieval-augmented generation method which iteratively uses a prediction of the upcoming sentence to anticipate future content, which is then utilized as a query to retrieve relevant documents to regenerate the sentence if it contains low-confidence tokens. We test FLARE along with baselines comprehensively over 4 long-form knowledge-intensive generation tasks/datasets. FLARE achieves superior or competitive performance on all tasks, demonstrating the effectiveness of our method. Code and datasets are available at https://github.com/jzbjyb/FLARE.",
+        "strip_abstract": "We propose Forward-Looking Active REtrieval augmented generation (FLARE), a generic retrieval-augmented generation method which iteratively uses a prediction of the upcoming sentence to anticipate future content, which is then utilized as a query to retrieve relevant documents to regenerate the sentence if it contains low-confidence tokens.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.06983v1.pdf",
+        "entity_stars": "65",
+        "stars_accumulated": "0.82 stars / hour",
+        "paper_task": [
+            "Retrieval"
+        ],
+        "code": [
+            "https://github.com/jzbjyb/flare"
+        ]
+    },
+    {
+        "title": "Medical SAM Adapter: Adapting Segment Anything Model for Medical Image Segmentation",
+        "authors": "Junde Wu, Yu Zhang, Rao Fu, Huihui Fang, Yuanpei Liu, Zhaowei Wang, Yanwu Xu, Yueming Jin",
+        "gitlab": "wujunde/medical-sam-adapter",
+        "date": "25 Apr 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/4d9e41fa-cac6-4099-a25c-2c791cbc96de.jpg",
+        "abstract": "The Segment Anything Model (SAM) has recently gained popularity in the field of image segmentation. Thanks to its impressive capabilities in all-round segmentation tasks and its prompt-based interface, SAM has sparked intensive discussion within the community. It is even said by many prestigious experts that image segmentation task has been \"finished\" by SAM. However, medical image segmentation, although an important branch of the image segmentation family, seems not to be included in the scope of Segmenting \"Anything\". Many individual experiments and recent studies have shown that SAM performs subpar in medical image segmentation. A natural question is how to find the missing piece of the puzzle to extend the strong segmentation capability of SAM to medical image segmentation. In this paper, instead of fine-tuning the SAM model, we propose Med SAM Adapter, which integrates the medical specific domain knowledge to the segmentation model, by a simple yet effective adaptation technique. Although this work is still one of a few to transfer the popular NLP technique Adapter to computer vision cases, this simple implementation shows surprisingly good performance on medical image segmentation. A medical image adapted SAM, which we have dubbed Medical SAM Adapter (MSA), shows superior performance on 19 medical image segmentation tasks with various image modalities including CT, MRI, ultrasound image, fundus image, and dermoscopic images. MSA outperforms a wide range of state-of-the-art (SOTA) medical image segmentation methods, such as nnUNet, TransUNet, UNetr, MedSegDiff, and also outperforms the fully fine-turned MedSAM with a considerable performance gap. Code will be released at: https://github.com/WuJunde/Medical-SAM-Adapter.",
+        "strip_abstract": "A medical image adapted SAM, which we have dubbed Medical SAM Adapter (MSA), shows superior performance on 19 medical image segmentation tasks with various image modalities including CT, MRI, ultrasound image, fundus image, and dermoscopic images.",
+        "arxiv_url": "https://arxiv.org/pdf/2304.12620v5.pdf",
+        "entity_stars": "139",
+        "stars_accumulated": "0.81 stars / hour",
+        "paper_task": [
+            "Image Segmentation",
+            "Medical Image Segmentation",
+            "Semantic Segmentation"
+        ],
+        "code": [
+            "https://github.com/wujunde/medical-sam-adapter"
+        ]
+    },
+    {
+        "title": "Otter: A Multi-Modal Model with In-Context Instruction Tuning",
+        "authors": "Bo Li, Yuanhan Zhang, Liangyu Chen, Jinghao Wang, Jingkang Yang, Ziwei Liu",
+        "gitlab": "luodian/otter",
+        "date": "5 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/352a304b-a14d-4477-9f01-6ae32741bdf1.jpg",
+        "abstract": "Large language models (LLMs) have demonstrated significant universal capabilities as few/zero-shot learners in various tasks due to their pre-training on vast amounts of text data, as exemplified by GPT-3, which boosted to InstrctGPT and ChatGPT, effectively following natural language instructions to accomplish real-world tasks. In this paper, we propose to introduce instruction tuning into multi-modal models, motivated by the Flamingo model's upstream interleaved format pretraining dataset. We adopt a similar approach to construct our MultI-Modal In-Context Instruction Tuning (MIMIC-IT) dataset. We then introduce Otter, a multi-modal model based on OpenFlamingo (open-sourced version of DeepMind's Flamingo), trained on MIMIC-IT and showcasing improved instruction-following ability and in-context learning. We also optimize OpenFlamingo's implementation for researchers, democratizing the required training resources from 1$\\times$ A100 GPU to 4$\\times$ RTX-3090 GPUs, and integrate both OpenFlamingo and Otter into Huggingface Transformers for more researchers to incorporate the models into their customized training and inference pipelines.",
+        "strip_abstract": "Large language models (LLMs) have demonstrated significant universal capabilities as few/zero-shot learners in various tasks due to their pre-training on vast amounts of text data, as exemplified by GPT-3, which boosted to InstrctGPT and ChatGPT, effectively following natural language instructions to accomplish real-world tasks.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.03726v1.pdf",
+        "entity_stars": "601",
+        "stars_accumulated": "0.80 stars / hour",
+        "paper_task": [
+            "Instruction Following"
+        ],
+        "code": [
+            "https://github.com/luodian/otter"
+        ]
+    },
+    {
+        "title": "An Inverse Scaling Law for CLIP Training",
+        "authors": "Xianhang Li, Zeyu Wang, Cihang Xie",
+        "gitlab": "ucsc-vlaa/clipa",
+        "date": "11 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/122e7d62-50bb-4f49-b0ab-ba50d3187712.jpg",
+        "abstract": "CLIP, the first foundation model that connects images and text, has enabled many recent breakthroughs in computer vision. However, its associated training cost is prohibitively high, imposing a significant barrier to its widespread exploration. In this paper, we present a surprising finding that there exists an inverse scaling law for CLIP training, whereby the larger the image/text encoders used, the shorter the sequence length of image/text tokens that can be applied in training. Moreover, we showcase that the strategy for reducing image/text token length plays a crucial role in determining the quality of this scaling law. As a result of this finding, we are able to successfully train CLIP even by using academic resources. For example, on an A100 eight-GPU server, our CLIP models achieve zero-shot top-1 ImageNet accuracies of 63.2% in ~2 days, 67.8% in ~3 days, and 69.3% in ~4 days. By reducing the computation barrier associated with CLIP, we hope to inspire more research in this field, particularly from academics. Our code is available at https://github.com/UCSC-VLAA/CLIPA.",
+        "strip_abstract": "CLIP, the first foundation model that connects images and text, has enabled many recent breakthroughs in computer vision.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.07017v1.pdf",
+        "entity_stars": "47",
+        "stars_accumulated": "0.78 stars / hour",
+        "paper_task": [],
+        "code": [
+            "https://github.com/ucsc-vlaa/clipa"
+        ]
+    },
+    {
+        "title": "PET-NeuS: Positional Encoding Tri-Planes for Neural Surfaces",
+        "authors": "Yiqun Wang, Ivan Skorokhodov, Peter Wonka",
+        "gitlab": "yiqun-wang/pet-neus",
+        "date": "9 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/190d460c-5782-4f15-b859-b29eb5fb8514.jpg",
+        "abstract": "A signed distance function (SDF) parametrized by an MLP is a common ingredient of neural surface reconstruction. We build on the successful recent method NeuS to extend it by three new components. The first component is to borrow the tri-plane representation from EG3D and represent signed distance fields as a mixture of tri-planes and MLPs instead of representing it with MLPs only. Using tri-planes leads to a more expressive data structure but will also introduce noise in the reconstructed surface. The second component is to use a new type of positional encoding with learnable weights to combat noise in the reconstruction process. We divide the features in the tri-plane into multiple frequency scales and modulate them with sin and cos functions of different frequencies. The third component is to use learnable convolution operations on the tri-plane features using self-attention convolution to produce features with different frequency bands. The experiments show that PET-NeuS achieves high-fidelity surface reconstruction on standard datasets. Following previous work and using the Chamfer metric as the most important way to measure surface reconstruction quality, we are able to improve upon the NeuS baseline by 57% on Nerf-synthetic (0.84 compared to 1.97) and by 15.5% on DTU (0.71 compared to 0.84). The qualitative evaluation reveals how our method can better control the interference of high-frequency noise. Code available at \\url{https://github.com/yiqun-wang/PET-NeuS}.",
+        "strip_abstract": "The first component is to borrow the tri-plane representation from EG3D and represent signed distance fields as a mixture of tri-planes and MLPs instead of representing it with MLPs only.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.05594v1.pdf",
+        "entity_stars": "79",
+        "stars_accumulated": "0.78 stars / hour",
+        "paper_task": [
+            "Surface Reconstruction"
+        ],
+        "code": [
+            "https://github.com/yiqun-wang/pet-neus"
+        ]
+    },
+    {
+        "title": "TidyBot: Personalized Robot Assistance with Large Language Models",
+        "authors": "Jimmy Wu, Rika Antonova, Adam Kan, Marion Lepert, Andy Zeng, Shuran Song, Jeannette Bohg, Szymon Rusinkiewicz, Thomas Funkhouser",
+        "gitlab": "jimmyyhwu/tidybot",
+        "date": "9 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2305.05658.jpg",
+        "abstract": "For a robot to personalize physical assistance effectively, it must learn user preferences that can be generally reapplied to future scenarios. In this work, we investigate personalization of household cleanup with robots that can tidy up rooms by picking up objects and putting them away. A key challenge is determining the proper place to put each object, as people's preferences can vary greatly depending on personal taste or cultural background. For instance, one person may prefer storing shirts in the drawer, while another may prefer them on the shelf. We aim to build systems that can learn such preferences from just a handful of examples via prior interactions with a particular person. We show that robots can combine language-based planning and perception with the few-shot summarization capabilities of large language models (LLMs) to infer generalized user preferences that are broadly applicable to future interactions. This approach enables fast adaptation and achieves 91.2% accuracy on unseen objects in our benchmark dataset. We also demonstrate our approach on a real-world mobile manipulator called TidyBot, which successfully puts away 85.0% of objects in real-world test scenarios.",
+        "strip_abstract": "For a robot to personalize physical assistance effectively, it must learn user preferences that can be generally reapplied to future scenarios.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.05658v1.pdf",
+        "entity_stars": "125",
+        "stars_accumulated": "0.76 stars / hour",
+        "paper_task": [],
+        "code": [
+            "https://github.com/jimmyyhwu/tidybot"
+        ]
+    },
+    {
+        "title": "PP-LiteSeg: A Superior Real-Time Semantic Segmentation Model",
+        "authors": "Juncai Peng, Yi Liu, Shiyu Tang, Yuying Hao, Lutao Chu, Guowei Chen, Zewu Wu, Zeyu Chen, Zhiliang Yu, Yuning Du, Qingqing Dang, Baohua Lai, Qiwen Liu, Xiaoguang Hu, dianhai yu, Yanjun Ma",
+        "gitlab": "Deci-AI/super-gradients",
+        "date": "6 Apr 2022",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/1f3bf3f5-d4b9-4f0e-9a0d-cdd71cb37197.jpg",
+        "abstract": "Real-world applications have high demands for semantic segmentation methods. Although semantic segmentation has made remarkable leap-forwards with deep learning, the performance of real-time methods is not satisfactory. In this work, we propose PP-LiteSeg, a novel lightweight model for the real-time semantic segmentation task. Specifically, we present a Flexible and Lightweight Decoder (FLD) to reduce computation overhead of previous decoder. To strengthen feature representations, we propose a Unified Attention Fusion Module (UAFM), which takes advantage of spatial and channel attention to produce a weight and then fuses the input features with the weight. Moreover, a Simple Pyramid Pooling Module (SPPM) is proposed to aggregate global context with low computation cost. Extensive evaluations demonstrate that PP-LiteSeg achieves a superior trade-off between accuracy and speed compared to other methods. On the Cityscapes test set, PP-LiteSeg achieves 72.0% mIoU/273.6 FPS and 77.5% mIoU/102.6 FPS on NVIDIA GTX 1080Ti. Source code and models are available at PaddleSeg: https://github.com/PaddlePaddle/PaddleSeg.",
+        "strip_abstract": "Real-world applications have high demands for semantic segmentation methods.",
+        "arxiv_url": "https://arxiv.org/pdf/2204.02681v1.pdf",
+        "entity_stars": "2,207",
+        "stars_accumulated": "0.75 stars / hour",
+        "paper_task": [
+            "Real-Time Semantic Segmentation",
+            "Semantic Segmentation"
+        ],
+        "code": [
+            "https://github.com/PaddlePaddle/PaddleSeg",
+            "https://github.com/Deci-AI/super-gradients"
+        ]
+    },
+    {
+        "title": "VideoChat: Chat-Centric Video Understanding",
+        "authors": "Kunchang Li, Yinan He, Yi Wang, Yizhuo Li, Wenhai Wang, Ping Luo, Yali Wang, LiMin Wang, Yu Qiao",
+        "gitlab": "opengvlab/ask-anything",
+        "date": "10 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/ba5103d5-422a-41c2-a470-d85685fe702f.jpg",
+        "abstract": "In this study, we initiate an exploration into video understanding by introducing VideoChat, an end-to-end chat-centric video understanding system. It integrates video foundation models and large language models via a learnable neural interface, excelling in spatiotemporal reasoning, event localization, and causal relationship inference. To instructively tune this system, we propose a video-centric instruction dataset, composed of thousands of videos matched with detailed descriptions and conversations. This dataset emphasizes spatiotemporal reasoning and causal relationships, providing a valuable asset for training chat-centric video understanding systems. Preliminary qualitative experiments reveal our system's potential across a broad spectrum of video applications and set the standard for future research. Access our code and data at https://github.com/OpenGVLab/Ask-Anything",
+        "strip_abstract": "In this study, we initiate an exploration into video understanding by introducing VideoChat, an end-to-end chat-centric video understanding system.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.06355v1.pdf",
+        "entity_stars": "1,512",
+        "stars_accumulated": "0.73 stars / hour",
+        "paper_task": [
+            "Video Understanding"
+        ],
+        "code": [
+            "https://github.com/opengvlab/ask-anything"
         ]
     },
     {
@@ -353,298 +409,12 @@
         "abstract": "Large Language Models (LLMs), such as ChatGPT and GPT-4, have revolutionized natural language processing research and demonstrated potential in Artificial General Intelligence (AGI). However, the expensive training and deployment of LLMs present challenges to transparent and open academic research. To address these issues, this project open-sources the Chinese LLaMA and Alpaca large models, emphasizing instruction fine-tuning. We expand the original LLaMA's Chinese vocabulary by adding 20K Chinese tokens, increasing encoding efficiency and enhancing basic semantic understanding. By incorporating secondary pre-training using Chinese data and fine-tuning with Chinese instruction data, we substantially improve the models' comprehension and execution of instructions. Our pilot study serves as a foundation for researchers adapting LLaMA and Alpaca models to other languages. Resources are made publicly available through GitHub, fostering open research in the Chinese NLP community and beyond. GitHub repository: https://github.com/ymcui/Chinese-LLaMA-Alpaca",
         "strip_abstract": "Large Language Models (LLMs), such as ChatGPT and GPT-4, have revolutionized natural language processing research and demonstrated potential in Artificial General Intelligence (AGI).",
         "arxiv_url": "https://arxiv.org/pdf/2304.08177v1.pdf",
-        "entity_stars": "5,855",
-        "stars_accumulated": "1.08 stars / hour",
+        "entity_stars": "8,293",
+        "stars_accumulated": "0.66 stars / hour",
         "paper_task": [],
         "code": [
             "https://github.com/ymcui/chinese-llama-alpaca",
             "https://github.com/jackaduma/Alpaca-LoRA-RLHF-PyTorch"
-        ]
-    },
-    {
-        "title": "A Survey of Large Language Models",
-        "authors": "Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, Yifan Du, Chen Yang, Yushuo Chen, Zhipeng Chen, Jinhao Jiang, Ruiyang Ren, YiFan Li, Xinyu Tang, Zikang Liu, Peiyu Liu, Jian-Yun Nie, Ji-Rong Wen",
-        "gitlab": "rucaibox/llmsurvey",
-        "date": "31 Mar 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/b734db0f-aac3-4825-b340-067ec4dca8f6.jpg",
-        "abstract": "Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models. Recently, pre-trained language models (PLMs) have been proposed by pre-training Transformer models over large-scale corpora, showing strong capabilities in solving various NLP tasks. Since researchers have found that model scaling can lead to performance improvement, they further study the scaling effect by increasing the model size to an even larger size. Interestingly, when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance improvement but also show some special abilities that are not present in small-scale language models. To discriminate the difference in parameter scale, the research community has coined the term large language models (LLM) for the PLMs of significant size. Recently, the research on LLMs has been largely advanced by both academia and industry, and a remarkable progress is the launch of ChatGPT, which has attracted widespread attention from society. The technical evolution of LLMs has been making an important impact on the entire AI community, which would revolutionize the way how we develop and use AI algorithms. In this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.",
-        "strip_abstract": "To discriminate the difference in parameter scale, the research community has coined the term large language models (LLM) for the PLMs of significant size.",
-        "arxiv_url": "https://arxiv.org/pdf/2303.18223v5.pdf",
-        "entity_stars": "821",
-        "stars_accumulated": "1.04 stars / hour",
-        "paper_task": [
-            "Language Modelling"
-        ],
-        "code": [
-            "https://github.com/rucaibox/llmsurvey"
-        ]
-    },
-    {
-        "title": "SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation",
-        "authors": "Wenxuan Zhang, Xiaodong Cun, Xuan Wang, Yong Zhang, Xi Shen, Yu Guo, Ying Shan, Fei Wang",
-        "gitlab": "winfredy/sadtalker",
-        "date": "22 Nov 2022",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/fd3ca42e-002c-4af5-881c-940a0c1303d4.jpg",
-        "abstract": "Generating talking head videos through a face image and a piece of speech audio still contains many challenges. ie, unnatural head movement, distorted expression, and identity modification. We argue that these issues are mainly because of learning from the coupled 2D motion fields. On the other hand, explicitly using 3D information also suffers problems of stiff expression and incoherent video. We present SadTalker, which generates 3D motion coefficients (head pose, expression) of the 3DMM from audio and implicitly modulates a novel 3D-aware face render for talking head generation. To learn the realistic motion coefficients, we explicitly model the connections between audio and different types of motion coefficients individually. Precisely, we present ExpNet to learn the accurate facial expression from audio by distilling both coefficients and 3D-rendered faces. As for the head pose, we design PoseVAE via a conditional VAE to synthesize head motion in different styles. Finally, the generated 3D motion coefficients are mapped to the unsupervised 3D keypoints space of the proposed face render, and synthesize the final video. We conducted extensive experiments to demonstrate the superiority of our method in terms of motion and video quality.",
-        "strip_abstract": "We present SadTalker, which generates 3D motion coefficients (head pose, expression) of the 3DMM from audio and implicitly modulates a novel 3D-aware face render for talking head generation.",
-        "arxiv_url": "https://arxiv.org/pdf/2211.12194v2.pdf",
-        "entity_stars": "2,333",
-        "stars_accumulated": "1.04 stars / hour",
-        "paper_task": [
-            "Talking Head Generation"
-        ],
-        "code": [
-            "https://github.com/winfredy/sadtalker"
-        ]
-    },
-    {
-        "title": "MasaCtrl: Tuning-Free Mutual Self-Attention Control for Consistent Image Synthesis and Editing",
-        "authors": "Mingdeng Cao, Xintao Wang, Zhongang Qi, Ying Shan, XiaoHu Qie, Yinqiang Zheng",
-        "gitlab": "tencentarc/masactrl",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/5963b8c8-873c-4f49-97a7-dbd5750c8221.jpg",
-        "abstract": "Despite the success in large-scale text-to-image generation and text-conditioned image editing, existing methods still struggle to produce consistent generation and editing results. For example, generation approaches usually fail to synthesize multiple images of the same objects/characters but with different views or poses. Meanwhile, existing editing methods either fail to achieve effective complex non-rigid editing while maintaining the overall textures and identity, or require time-consuming fine-tuning to capture the image-specific appearance. In this paper, we develop MasaCtrl, a tuning-free method to achieve consistent image generation and complex non-rigid image editing simultaneously. Specifically, MasaCtrl converts existing self-attention in diffusion models into mutual self-attention, so that it can query correlated local contents and textures from source images for consistency. To further alleviate the query confusion between foreground and background, we propose a mask-guided mutual self-attention strategy, where the mask can be easily extracted from the cross-attention maps. Extensive experiments show that the proposed MasaCtrl can produce impressive results in both consistent image generation and complex non-rigid real image editing.",
-        "strip_abstract": "Despite the success in large-scale text-to-image generation and text-conditioned image editing, existing methods still struggle to produce consistent generation and editing results.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.08465v1.pdf",
-        "entity_stars": "75",
-        "stars_accumulated": "1.01 stars / hour",
-        "paper_task": [
-            "Image Generation",
-            "Text-to-Image Generation"
-        ],
-        "code": [
-            "https://github.com/tencentarc/masactrl"
-        ]
-    },
-    {
-        "title": "Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection",
-        "authors": "Shilong Liu, Zhaoyang Zeng, Tianhe Ren, Feng Li, Hao Zhang, Jie Yang, Chunyuan Li, Jianwei Yang, Hang Su, Jun Zhu, Lei Zhang",
-        "gitlab": "idea-research/groundingdino",
-        "date": "9 Mar 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/23e48d54-aac9-444a-bd44-a5d23b32eb3e.jpg",
-        "abstract": "In this paper, we present an open-set object detector, called Grounding DINO, by marrying Transformer-based detector DINO with grounded pre-training, which can detect arbitrary objects with human inputs such as category names or referring expressions. The key solution of open-set object detection is introducing language to a closed-set detector for open-set concept generalization. To effectively fuse language and vision modalities, we conceptually divide a closed-set detector into three phases and propose a tight fusion solution, which includes a feature enhancer, a language-guided query selection, and a cross-modality decoder for cross-modality fusion. While previous works mainly evaluate open-set object detection on novel categories, we propose to also perform evaluations on referring expression comprehension for objects specified with attributes. Grounding DINO performs remarkably well on all three settings, including benchmarks on COCO, LVIS, ODinW, and RefCOCO/+/g. Grounding DINO achieves a $52.5$ AP on the COCO detection zero-shot transfer benchmark, i.e., without any training data from COCO. It sets a new record on the ODinW zero-shot benchmark with a mean $26.1$ AP. Code will be available at \\url{https://github.com/IDEA-Research/GroundingDINO}.",
-        "strip_abstract": "To effectively fuse language and vision modalities, we conceptually divide a closed-set detector into three phases and propose a tight fusion solution, which includes a feature enhancer, a language-guided query selection, and a cross-modality decoder for cross-modality fusion.",
-        "arxiv_url": "https://arxiv.org/pdf/2303.05499v4.pdf",
-        "entity_stars": "1,278",
-        "stars_accumulated": "1.00 stars / hour",
-        "paper_task": [
-            "object-detection",
-            "Object Detection",
-            "Referring Expression",
-            "Referring Expression Comprehension",
-            "Zero-Shot Object Detection"
-        ],
-        "code": [
-            "https://github.com/idea-research/groundingdino",
-            "https://github.com/IDEA-Research/Grounded-Segment-Anything"
-        ]
-    },
-    {
-        "title": "GLM-130B: An Open Bilingual Pre-trained Model",
-        "authors": "Aohan Zeng, Xiao Liu, Zhengxiao Du, Zihan Wang, Hanyu Lai, Ming Ding, Zhuoyi Yang, Yifan Xu, Wendi Zheng, Xiao Xia, Weng Lam Tam, Zixuan Ma, Yufei Xue, Jidong Zhai, WenGuang Chen, Peng Zhang, Yuxiao Dong, Jie Tang",
-        "gitlab": "thudm/glm-130b",
-        "date": "5 Oct 2022",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/746828c3-fa1b-4b07-bb7c-1d39b6a83807.jpg",
-        "abstract": "We introduce GLM-130B, a bilingual (English and Chinese) pre-trained language model with 130 billion parameters. It is an attempt to open-source a 100B-scale model at least as good as GPT-3 and unveil how models of such a scale can be successfully pre-trained. Over the course of this effort, we face numerous unexpected technical and engineering challenges, particularly on loss spikes and disconvergence. In this paper, we introduce the training process of GLM-130B including its design choices, training strategies for both efficiency and stability, and engineering efforts. The resultant GLM-130B model offers significant outperformance over GPT-3 175B on a wide range of popular English benchmarks while the performance advantage is not observed in OPT-175B and BLOOM-176B. It also consistently and significantly outperforms ERNIE TITAN 3.0 260B -- the largest Chinese language model -- across related benchmarks. Finally, we leverage a unique scaling property of GLM-130B to reach INT4 quantization, without quantization aware training and with almost no performance loss, making it the first among 100B-scale models. More importantly, the property allows its effective inference on 4$\\times$RTX 3090 (24G) or 8$\\times$RTX 2080 Ti (11G) GPUs, the most ever affordable GPUs required for using 100B-scale models. The GLM-130B model weights are publicly accessible and its code, training logs, related toolkit, and lessons learned are open-sourced at https://github.com/THUDM/GLM-130B .",
-        "strip_abstract": "We introduce GLM-130B, a bilingual (English and Chinese) pre-trained language model with 130 billion parameters.",
-        "arxiv_url": "https://arxiv.org/pdf/2210.02414v1.pdf",
-        "entity_stars": "4,598",
-        "stars_accumulated": "0.92 stars / hour",
-        "paper_task": [
-            "Language Modelling",
-            "Multi-task Language Understanding",
-            "Quantization"
-        ],
-        "code": [
-            "https://github.com/thudm/glm-130b",
-            "https://github.com/thudm/chatglm-6b",
-            "https://github.com/modelscope/modelscope",
-            "https://github.com/THUDM/GLM",
-            "https://github.com/jackaduma/ChatGLM-LoRA-RLHF-PyTorch"
-        ]
-    },
-    {
-        "title": "Visual Instruction Tuning",
-        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee",
-        "gitlab": "IDEA-Research/Grounded-Segment-Anything",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/12f66e9d-6a2a-4f88-9f86-06f839e66390.jpg",
-        "abstract": "Instruction tuning large language models (LLMs) using machine-generated instruction-following data has improved zero-shot capabilities on new tasks, but the idea is less explored in the multimodal field. In this paper, we present the first attempt to use language-only GPT-4 to generate multimodal language-image instruction-following data. By instruction tuning on such generated data, we introduce LLaVA: Large Language and Vision Assistant, an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding.Our early experiments show that LLaVA demonstrates impressive multimodel chat abilities, sometimes exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and yields a 85.1% relative score compared with GPT-4 on a synthetic multimodal instruction-following dataset. When fine-tuned on Science QA, the synergy of LLaVA and GPT-4 achieves a new state-of-the-art accuracy of 92.53%. We make GPT-4 generated visual instruction tuning data, our model and code base publicly available.",
-        "strip_abstract": "Instruction tuning large language models (LLMs) using machine-generated instruction-following data has improved zero-shot capabilities on new tasks, but the idea is less explored in the multimodal field.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.08485v1.pdf",
-        "entity_stars": "7,091",
-        "stars_accumulated": "0.91 stars / hour",
-        "paper_task": [
-            "Instruction Following"
-        ],
-        "code": [
-            "https://github.com/IDEA-Research/Grounded-Segment-Anything",
-            "https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM"
-        ]
-    },
-    {
-        "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
-        "authors": "Elias Frantar, Saleh Ashkboos, Torsten Hoefler, Dan Alistarh",
-        "gitlab": "thudm/chatglm-6b",
-        "date": "31 Oct 2022",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/56a1b90e-d378-48da-8d0a-07e6aa6ec86a.gif",
-        "abstract": "Generative Pre-trained Transformer models, known as GPT or OPT, set themselves apart through breakthrough performance across complex language modelling tasks, but also by their extremely high computational and storage costs. Specifically, due to their massive size, even inference for large, highly-accurate GPT models may require multiple performant GPUs, which limits the usability of such models. While there is emerging work on relieving this pressure via model compression, the applicability and performance of existing compression techniques is limited by the scale and complexity of GPT models. In this paper, we address this challenge, and propose GPTQ, a new one-shot weight quantization method based on approximate second-order information, that is both highly-accurate and highly-efficient. Specifically, GPTQ can quantize GPT models with 175 billion parameters in approximately four GPU hours, reducing the bitwidth down to 3 or 4 bits per weight, with negligible accuracy degradation relative to the uncompressed baseline. Our method more than doubles the compression gains relative to previously-proposed one-shot quantization methods, preserving accuracy, allowing us for the first time to execute an 175 billion-parameter model inside a single GPU for generative inference. Moreover, we also show that our method can still provide reasonable accuracy in the extreme quantization regime, in which weights are quantized to 2-bit or even ternary quantization levels. We show experimentally that these improvements can be leveraged for end-to-end inference speedups over FP16, of around 3.25x when using high-end GPUs (NVIDIA A100) and 4.5x when using more cost-effective ones (NVIDIA A6000). The implementation is available at https://github.com/IST-DASLab/gptq.",
-        "strip_abstract": "In this paper, we address this challenge, and propose GPTQ, a new one-shot weight quantization method based on approximate second-order information, that is both highly-accurate and highly-efficient.",
-        "arxiv_url": "https://arxiv.org/pdf/2210.17323v2.pdf",
-        "entity_stars": "19,291",
-        "stars_accumulated": "0.87 stars / hour",
-        "paper_task": [
-            "Language Modelling",
-            "Model Compression",
-            "Quantization"
-        ],
-        "code": [
-            "https://github.com/ist-daslab/gptq",
-            "https://github.com/thudm/chatglm-6b",
-            "https://github.com/qwopqwop200/GPTQ-for-LLaMa"
-        ]
-    },
-    {
-        "title": "A Comparative Study between Full-Parameter and LoRA-based Fine-Tuning on Chinese Instruction Data for Instruction Following Large Language Model",
-        "authors": "Xianghui Sun, Yunjie Ji, Baochang Ma, Xiangang Li",
-        "gitlab": "lianjiatech/belle",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.08109.jpg",
-        "abstract": "Recently, the instruction-tuning of large language models is a crucial area of research in the field of natural language processing. Due to resource and cost limitations, several researchers have employed parameter-efficient tuning techniques, such as LoRA, for instruction tuning, and have obtained encouraging results In comparison to full-parameter fine-tuning, LoRA-based tuning demonstrates salient benefits in terms of training costs. In this study, we undertook experimental comparisons between full-parameter fine-tuning and LoRA-based tuning methods, utilizing LLaMA as the base model. The experimental results show that the selection of the foundational model, training dataset scale, learnable parameter quantity, and model training cost are all important factors. We hope that the experimental conclusions of this paper can provide inspiration for training large language models, especially in the field of Chinese, and help researchers find a better trade-off strategy between training cost and model performance. To facilitate the reproduction of the paper's results, the dataset, model and code will be released.",
-        "strip_abstract": "In this study, we undertook experimental comparisons between full-parameter fine-tuning and LoRA-based tuning methods, utilizing LLaMA as the base model.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.08109v2.pdf",
-        "entity_stars": "4,260",
-        "stars_accumulated": "0.84 stars / hour",
-        "paper_task": [
-            "Instruction Following",
-            "Language Modelling"
-        ],
-        "code": [
-            "https://github.com/lianjiatech/belle"
-        ]
-    },
-    {
-        "title": "SpA-Former: Transformer image shadow detection and removal via spatial attention",
-        "authors": "Xiao Feng Zhang, Chao Chen Gu, Shan Ying Zhu",
-        "gitlab": "zhangbaijin/spatial-transformer-shadow-removal",
-        "date": "22 Jun 2022",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/131dd6ee-4d9f-4120-a9c7-b8a9a53f0c06.jpg",
-        "abstract": "In this paper, we propose an end-to-end SpA-Former to recover a shadow-free image from a single shaded image. Unlike traditional methods that require two steps for shadow detection and then shadow removal, the SpA-Former unifies these steps into one, which is a one-stage network capable of directly learning the mapping function between shadows and no shadows, it does not require a separate shadow detection. Thus, SpA-former is adaptable to real image de-shadowing for shadows projected on different semantic regions. SpA-Former consists of transformer layer and a series of joint Fourier transform residual blocks and two-wheel joint spatial attention. The network in this paper is able to handle the task while achieving a very fast processing efficiency. Our code is relased on https://github.com/zhangbaijin/SpA-Former-shadow-removal",
-        "strip_abstract": "In this paper, we propose an end-to-end SpA-Former to recover a shadow-free image from a single shaded image.",
-        "arxiv_url": "https://arxiv.org/pdf/2206.10910v3.pdf",
-        "entity_stars": "198",
-        "stars_accumulated": "0.72 stars / hour",
-        "paper_task": [
-            "Shadow Detection",
-            "Shadow Detection And Removal",
-            "Shadow Removal"
-        ],
-        "code": [
-            "https://github.com/zhangbaijin/spa-former-shadow-removal",
-            "https://github.com/zhangbaijin/spatial-transformer-shadow-removal"
-        ]
-    },
-    {
-        "title": "Instruction Tuning with GPT-4",
-        "authors": "Baolin Peng, Chunyuan Li, Pengcheng He, Michel Galley, Jianfeng Gao",
-        "gitlab": "Instruction-Tuning-with-GPT-4/GPT-4-LLM",
-        "date": "6 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/6bb9803b-30f2-4c32-abc3-b5121dcc484e.jpg",
-        "abstract": "Prior work has shown that finetuning large language models (LLMs) using machine-generated instruction-following data enables such models to achieve remarkable zero-shot capabilities on new tasks, and no human-written instructions are needed. In this paper, we present the first attempt to use GPT-4 to generate instruction-following data for LLM finetuning. Our early experiments on instruction-tuned LLaMA models show that the 52K English and Chinese instruction-following data generated by GPT-4 leads to superior zero-shot performance on new tasks to the instruction-following data generated by previous state-of-the-art models. We also collect feedback and comparison data from GPT-4 to enable a comprehensive evaluation and reward model training. We make our data generated using GPT-4 as well as our codebase publicly available.",
-        "strip_abstract": "Prior work has shown that finetuning large language models (LLMs) using machine-generated instruction-following data enables such models to achieve remarkable zero-shot capabilities on new tasks, and no human-written instructions are needed.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.03277v1.pdf",
-        "entity_stars": "2,155",
-        "stars_accumulated": "0.70 stars / hour",
-        "paper_task": [
-            "Instruction Following"
-        ],
-        "code": [
-            "https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM"
-        ]
-    },
-    {
-        "title": "Beyond Appearance: a Semantic Controllable Self-Supervised Learning Framework for Human-Centric Visual Tasks",
-        "authors": "Weihua Chen, Xianzhe Xu, Jian Jia, Hao Luo, Yaohua Wang, Fan Wang, Rong Jin, Xiuyu Sun",
-        "gitlab": "tinyvision/SOLIDER",
-        "date": "30 Mar 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/415c26bf-1537-4eda-b106-fe7eded92211.jpg",
-        "abstract": "Human-centric visual tasks have attracted increasing research attention due to their widespread applications. In this paper, we aim to learn a general human representation from massive unlabeled human images which can benefit downstream human-centric tasks to the maximum extent. We call this method SOLIDER, a Semantic cOntrollable seLf-supervIseD lEaRning framework. Unlike the existing self-supervised learning methods, prior knowledge from human images is utilized in SOLIDER to build pseudo semantic labels and import more semantic information into the learned representation. Meanwhile, we note that different downstream tasks always require different ratios of semantic information and appearance information. For example, human parsing requires more semantic information, while person re-identification needs more appearance information for identification purpose. So a single learned representation cannot fit for all requirements. To solve this problem, SOLIDER introduces a conditional network with a semantic controller. After the model is trained, users can send values to the controller to produce representations with different ratios of semantic information, which can fit different needs of downstream tasks. Finally, SOLIDER is verified on six downstream human-centric visual tasks. It outperforms state of the arts and builds new baselines for these tasks. The code is released in https://github.com/tinyvision/SOLIDER.",
-        "strip_abstract": "Unlike the existing self-supervised learning methods, prior knowledge from human images is utilized in SOLIDER to build pseudo semantic labels and import more semantic information into the learned representation.",
-        "arxiv_url": "https://arxiv.org/pdf/2303.17602v1.pdf",
-        "entity_stars": "555",
-        "stars_accumulated": "0.68 stars / hour",
-        "paper_task": [
-            "Human Parsing",
-            "Pedestrian Attribute Recognition",
-            "Pedestrian Detection",
-            "Person Re-Identification",
-            "Person Search",
-            "Pose Estimation",
-            "Self-Supervised Learning",
-            "Semantic Segmentation"
-        ],
-        "code": [
-            "https://github.com/tinyvision/SOLIDER",
-            "https://github.com/modelscope/modelscope",
-            "https://github.com/hasanirtiza/Pedestron"
-        ]
-    },
-    {
-        "title": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace",
-        "authors": "Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, Yueting Zhuang",
-        "gitlab": "microsoft/JARVIS",
-        "date": "30 Mar 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/2d4ea6fa-7947-42e9-a3dd-29d40c7ed853.jpg",
-        "abstract": "Solving complicated AI tasks with different domains and modalities is a key step toward advanced artificial intelligence. While there are abundant AI models available for different domains and modalities, they cannot handle complicated AI tasks. Considering large language models (LLMs) have exhibited exceptional ability in language understanding, generation, interaction, and reasoning, we advocate that LLMs could act as a controller to manage existing AI models to solve complicated AI tasks and language could be a generic interface to empower this. Based on this philosophy, we present HuggingGPT, a framework that leverages LLMs (e.g., ChatGPT) to connect various AI models in machine learning communities (e.g., Hugging Face) to solve AI tasks. Specifically, we use ChatGPT to conduct task planning when receiving a user request, select models according to their function descriptions available in Hugging Face, execute each subtask with the selected AI model, and summarize the response according to the execution results. By leveraging the strong language capability of ChatGPT and abundant AI models in Hugging Face, HuggingGPT is able to cover numerous sophisticated AI tasks in different modalities and domains and achieve impressive results in language, vision, speech, and other challenging tasks, which paves a new way towards advanced artificial intelligence.",
-        "strip_abstract": "Solving complicated AI tasks with different domains and modalities is a key step toward advanced artificial intelligence.",
-        "arxiv_url": "https://arxiv.org/pdf/2303.17580v2.pdf",
-        "entity_stars": "18,486",
-        "stars_accumulated": "0.67 stars / hour",
-        "paper_task": [],
-        "code": [
-            "https://github.com/microsoft/JARVIS",
-            "https://github.com/lonnyzhang423/github-hot-hub",
-            "https://github.com/SnailDev/github-hot-hub"
-        ]
-    },
-    {
-        "title": "Mask-Free Video Instance Segmentation",
-        "authors": "Lei Ke, Martin Danelljan, Henghui Ding, Yu-Wing Tai, Chi-Keung Tang, Fisher Yu",
-        "gitlab": "syscv/maskfreevis",
-        "date": "28 Mar 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/65ed7b38-f307-474b-90e4-af4e8bff34e2.gif",
-        "abstract": "The recent advancement in Video Instance Segmentation (VIS) has largely been driven by the use of deeper and increasingly data-hungry transformer-based models. However, video masks are tedious and expensive to annotate, limiting the scale and diversity of existing VIS datasets. In this work, we aim to remove the mask-annotation requirement. We propose MaskFreeVIS, achieving highly competitive VIS performance, while only using bounding box annotations for the object state. We leverage the rich temporal mask consistency constraints in videos by introducing the Temporal KNN-patch Loss (TK-Loss), providing strong mask supervision without any labels. Our TK-Loss finds one-to-many matches across frames, through an efficient patch-matching step followed by a K-nearest neighbor selection. A consistency loss is then enforced on the found matches. Our mask-free objective is simple to implement, has no trainable parameters, is computationally efficient, yet outperforms baselines employing, e.g., state-of-the-art optical flow to enforce temporal mask consistency. We validate MaskFreeVIS on the YouTube-VIS 2019/2021, OVIS and BDD100K MOTS benchmarks. The results clearly demonstrate the efficacy of our method by drastically narrowing the gap between fully and weakly-supervised VIS performance. Our code and trained models are available at https://github.com/SysCV/MaskFreeVis.",
-        "strip_abstract": "A consistency loss is then enforced on the found matches.",
-        "arxiv_url": "https://arxiv.org/pdf/2303.15904v1.pdf",
-        "entity_stars": "105",
-        "stars_accumulated": "0.66 stars / hour",
-        "paper_task": [
-            "Instance Segmentation",
-            "Optical Flow Estimation",
-            "Patch Matching",
-            "Semantic Segmentation",
-            "Video Instance Segmentation"
-        ],
-        "code": [
-            "https://github.com/syscv/maskfreevis"
-        ]
-    },
-    {
-        "title": "Automatically Bounding the Taylor Remainder Series: Tighter Bounds and New Applications",
-        "authors": "Matthew Streeter, Joshua V. Dillon",
-        "gitlab": "google/autobound",
-        "date": "22 Dec 2022",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/9178b479-832b-4a39-9323-558153ebff1b.jpg",
-        "abstract": "We present a new algorithm for automatically bounding the Taylor remainder series. In the special case of a scalar function $f: \\mathbb{R} \\to \\mathbb{R}$, our algorithm takes as input a reference point $x_0$, trust region $[a, b]$, and integer $k \\ge 1$, and returns an interval $I$ such that $f(x) - \\sum_{i=0}^{k-1} \\frac {1} {i!} f^{(i)}(x_0) (x - x_0)^i \\in I (x - x_0)^k$ for all $x \\in [a, b]$. As in automatic differentiation, the function $f$ is provided to the algorithm in symbolic form, and must be composed of known atomic functions. At a high level, our algorithm has two steps. First, for a variety of commonly-used elementary functions (e.g., $\\exp$, $\\log$), we derive sharp polynomial upper and lower bounds on the Taylor remainder series. We then recursively combine the bounds for the elementary functions using an interval arithmetic variant of Taylor-mode automatic differentiation. Our algorithm can make efficient use of machine learning hardware accelerators, and we provide an open source implementation in JAX. We then turn our attention to applications. Most notably, we use our new machinery to create the first universal majorization-minimization optimization algorithms: algorithms that iteratively minimize an arbitrary loss using a majorizer that is derived automatically, rather than by hand. Applied to machine learning, this leads to architecture-specific optimizers for training deep networks that converge from any starting point, without hyperparameter tuning. Our experiments show that for some optimization problems, these hyperparameter-free optimizers outperform tuned versions of gradient descent, Adam, and AdaGrad. We also show that our automatically-derived bounds can be used for verified global optimization and numerical integration, and to prove sharper versions of Jensen's inequality.",
-        "strip_abstract": "We then recursively combine the bounds for the elementary functions using an interval arithmetic variant of Taylor-mode automatic differentiation.",
-        "arxiv_url": "https://arxiv.org/pdf/2212.11429v2.pdf",
-        "entity_stars": "261",
-        "stars_accumulated": "0.66 stars / hour",
-        "paper_task": [
-            "Numerical Integration"
-        ],
-        "code": [
-            "https://github.com/google/autobound"
         ]
     },
     {
@@ -656,7 +426,7 @@
         "abstract": "An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA.",
         "strip_abstract": "We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks.",
         "arxiv_url": "https://arxiv.org/pdf/2106.09685v2.pdf",
-        "entity_stars": "2,890",
+        "entity_stars": "3,877",
         "stars_accumulated": "0.66 stars / hour",
         "paper_task": [
             "Language Modelling"
@@ -666,120 +436,334 @@
             "https://github.com/tatsu-lab/stanford_alpaca",
             "https://github.com/tloen/alpaca-lora",
             "https://github.com/Lightning-AI/lit-llama",
-            "https://github.com/ZhangYuanhan-AI/NOAH"
+            "https://github.com/videocrafter/videocrafter"
         ]
     },
     {
-        "title": "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling",
-        "authors": "Stella Biderman, Hailey Schoelkopf, Quentin Anthony, Herbie Bradley, Kyle O'Brien, Eric Hallahan, Mohammad Aflah Khan, Shivanshu Purohit, USVSN Sai Prashanth, Edward Raff, Aviya Skowron, Lintang Sutawika, Oskar van der Wal",
-        "gitlab": "eleutherai/pythia",
-        "date": "3 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.01373.jpg",
-        "abstract": "How do large language models (LLMs) develop and evolve over the course of training? How do these patterns change as models scale? To answer these questions, we introduce \\textit{Pythia}, a suite of 16 LLMs all trained on public data seen in the exact same order and ranging in size from 70M to 12B parameters. We provide public access to 154 checkpoints for each one of the 16 models, alongside tools to download and reconstruct their exact training dataloaders for further study. We intend \\textit{Pythia} to facilitate research in many areas, and we present several case studies including novel results in memorization, term frequency effects on few-shot performance, and reducing gender bias. We demonstrate that this highly controlled setup can be used to yield novel insights toward LLMs and their training dynamics. Trained models, analysis code, training code, and training data can be found at https://github.com/EleutherAI/pythia.",
-        "strip_abstract": "How do large language models (LLMs) develop and evolve over the course of training?",
-        "arxiv_url": "https://arxiv.org/pdf/2304.01373v1.pdf",
-        "entity_stars": "832",
-        "stars_accumulated": "0.65 stars / hour",
-        "paper_task": [
-            "Memorization"
-        ],
-        "code": [
-            "https://github.com/eleutherai/gpt-neox",
-            "https://github.com/eleutherai/pythia"
-        ]
-    },
-    {
-        "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
-        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, Steven Hoi",
+        "title": "InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, Steven Hoi",
         "gitlab": "salesforce/lavis",
-        "date": "30 Jan 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/86352c90-c69c-405d-b3c7-8b9e8032b5cc.jpg",
-        "abstract": "The cost of vision-and-language pre-training has become increasingly prohibitive due to end-to-end training of large-scale models. This paper proposes BLIP-2, a generic and efficient pre-training strategy that bootstraps vision-language pre-training from off-the-shelf frozen pre-trained image encoders and frozen large language models. BLIP-2 bridges the modality gap with a lightweight Querying Transformer, which is pre-trained in two stages. The first stage bootstraps vision-language representation learning from a frozen image encoder. The second stage bootstraps vision-to-language generative learning from a frozen language model. BLIP-2 achieves state-of-the-art performance on various vision-language tasks, despite having significantly fewer trainable parameters than existing methods. For example, our model outperforms Flamingo80B by 8.7% on zero-shot VQAv2 with 54x fewer trainable parameters. We also demonstrate the model's emerging capabilities of zero-shot image-to-text generation that can follow natural language instructions.",
-        "strip_abstract": "The cost of vision-and-language pre-training has become increasingly prohibitive due to end-to-end training of large-scale models.",
-        "arxiv_url": "https://arxiv.org/pdf/2301.12597v1.pdf",
-        "entity_stars": "3,787",
-        "stars_accumulated": "0.65 stars / hour",
-        "paper_task": [
-            "Image Captioning",
-            "Image Retrieval",
-            "Image-to-Text Retrieval",
-            "Language Modelling",
-            "Representation Learning",
-            "Text Generation",
-            "Visual Question Answering (VQA)"
-        ],
-        "code": [
-            "https://github.com/salesforce/lavis",
-            "https://github.com/huggingface/transformers",
-            "https://github.com/baaivision/eva"
-        ]
-    },
-    {
-        "title": "From Zero to Hero: Examining the Power of Symbolic Tasks in Instruction Tuning",
-        "authors": "Qian Liu, Fan Zhou, Zhengbao Jiang, Longxu Dou, Min Lin",
-        "gitlab": "sail-sg/symbolic-instruction-tuning",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/17ceff6b-4a84-4cb1-9793-8c12a9afc11c.jpg",
-        "abstract": "Fine-tuning language models on tasks with instructions has demonstrated potential in facilitating zero-shot generalization to unseen tasks. In this paper, we introduce a straightforward yet effective method for enhancing instruction tuning by employing symbolic tasks. Compared to crowdsourced human tasks or model-generated tasks, symbolic tasks present a unique advantage as they can be easily generated in vast quantities, theoretically providing an infinite supply of high-quality training instances. To explore the potential of symbolic tasks, we carry out an extensive case study on the representative symbolic task of SQL execution. Empirical results on various benchmarks validate that the integration of SQL execution leads to significant improvements in zero-shot scenarios, particularly in table reasoning. Notably, our 3B model surpasses both the 175B GPT-3 and ChatGPT in zero-shot table reasoning across four benchmarks. Furthermore, experimental results on BBH (27 tasks) and MMLU (57 tasks) reveal that language models can be enhanced through symbolic tasks without compromising their generality. We hope that our paper serves as a catalyst, inspiring increased efforts to incorporate symbolic tasks in instruction tuning.",
-        "strip_abstract": "Empirical results on various benchmarks validate that the integration of SQL execution leads to significant improvements in zero-shot scenarios, particularly in table reasoning.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.07995v1.pdf",
-        "entity_stars": "43",
+        "date": "11 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2305.06500.jpg",
+        "abstract": "General-purpose language models that can solve various language-domain tasks have emerged driven by the pre-training and instruction-tuning pipeline. However, building general-purpose vision-language models is challenging due to the increased task discrepancy introduced by the additional visual input. Although vision-language pre-training has been widely studied, vision-language instruction tuning remains relatively less explored. In this paper, we conduct a systematic and comprehensive study on vision-language instruction tuning based on the pre-trained BLIP-2 models. We gather a wide variety of 26 publicly available datasets, transform them into instruction tuning format and categorize them into two clusters for held-in instruction tuning and held-out zero-shot evaluation. Additionally, we introduce instruction-aware visual feature extraction, a crucial method that enables the model to extract informative features tailored to the given instruction. The resulting InstructBLIP models achieve state-of-the-art zero-shot performance across all 13 held-out datasets, substantially outperforming BLIP-2 and the larger Flamingo. Our models also lead to state-of-the-art performance when finetuned on individual downstream tasks (e.g., 90.7% accuracy on ScienceQA IMG). Furthermore, we qualitatively demonstrate the advantages of InstructBLIP over concurrent multimodal models. All InstructBLIP models have been open-sourced at https://github.com/salesforce/LAVIS/tree/main/projects/instructblip.",
+        "strip_abstract": "In this paper, we conduct a systematic and comprehensive study on vision-language instruction tuning based on the pre-trained BLIP-2 models.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.06500v1.pdf",
+        "entity_stars": "4,410",
         "stars_accumulated": "0.63 stars / hour",
         "paper_task": [],
         "code": [
-            "https://github.com/sail-sg/symbolic-instruction-tuning"
+            "https://github.com/salesforce/lavis"
         ]
     },
     {
-        "title": "STRAP: Structured Object Affordance Segmentation with Point Supervision",
-        "authors": "Leiyao Cui, Xiaoxue Chen, Hao Zhao, Guyue Zhou, Yixin Zhu",
-        "gitlab": "leiyaocui/strap",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.08492.jpg",
-        "abstract": "With significant annotation savings, point supervision has been proven effective for numerous 2D and 3D scene understanding problems. This success is primarily attributed to the structured output space; i.e., samples with high spatial affinity tend to share the same labels. Sharing this spirit, we study affordance segmentation with point supervision, wherein the setting inherits an unexplored dual affinity-spatial affinity and label affinity. By label affinity, we refer to affordance segmentation as a multi-label prediction problem: A plate can be both holdable and containable. By spatial affinity, we refer to a universal prior that nearby pixels with similar visual features should share the same point annotation. To tackle label affinity, we devise a dense prediction network that enhances label relations by effectively densifying labels in a new domain (i.e., label co-occurrence). To address spatial affinity, we exploit a Transformer backbone for global patch interaction and a regularization loss. In experiments, we benchmark our method on the challenging CAD120 dataset, showing significant performance gains over prior methods.",
-        "strip_abstract": "By label affinity, we refer to affordance segmentation as a multi-label prediction problem: A plate can be both holdable and containable.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.08492v1.pdf",
+        "title": "Think Twice before Driving: Towards Scalable Decoders for End-to-End Autonomous Driving",
+        "authors": "Xiaosong Jia, Penghao Wu, Li Chen, Jiangwei Xie, Conghui He, Junchi Yan, Hongyang Li",
+        "gitlab": "opendrivelab/thinktwice",
+        "date": "10 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/2264db83-aafc-4959-a9f0-0a73b2d9728b.jpg",
+        "abstract": "End-to-end autonomous driving has made impressive progress in recent years. Existing methods usually adopt the decoupled encoder-decoder paradigm, where the encoder extracts hidden features from raw sensor data, and the decoder outputs the ego-vehicle's future trajectories or actions. Under such a paradigm, the encoder does not have access to the intended behavior of the ego agent, leaving the burden of finding out safety-critical regions from the massive receptive field and inferring about future situations to the decoder. Even worse, the decoder is usually composed of several simple multi-layer perceptrons (MLP) or GRUs while the encoder is delicately designed (e.g., a combination of heavy ResNets or Transformer). Such an imbalanced resource-task division hampers the learning process. In this work, we aim to alleviate the aforementioned problem by two principles: (1) fully utilizing the capacity of the encoder; (2) increasing the capacity of the decoder. Concretely, we first predict a coarse-grained future position and action based on the encoder features. Then, conditioned on the position and action, the future scene is imagined to check the ramification if we drive accordingly. We also retrieve the encoder features around the predicted coordinate to obtain fine-grained information about the safety-critical region. Finally, based on the predicted future and the retrieved salient feature, we refine the coarse-grained position and action by predicting its offset from ground-truth. The above refinement module could be stacked in a cascaded fashion, which extends the capacity of the decoder with spatial-temporal prior knowledge about the conditioned future. We conduct experiments on the CARLA simulator and achieve state-of-the-art performance in closed-loop benchmarks. Extensive ablation studies demonstrate the effectiveness of each proposed module.",
+        "strip_abstract": "End-to-end autonomous driving has made impressive progress in recent years.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.06242v1.pdf",
         "entity_stars": "50",
         "stars_accumulated": "0.61 stars / hour",
         "paper_task": [
-            "Scene Understanding"
+            "Autonomous Driving"
         ],
         "code": [
-            "https://github.com/leiyaocui/strap"
+            "https://github.com/opendrivelab/thinktwice"
         ]
     },
     {
-        "title": "CodeGeeX: A Pre-Trained Model for Code Generation with Multilingual Evaluations on HumanEval-X",
-        "authors": "Qinkai Zheng, Xiao Xia, Xu Zou, Yuxiao Dong, Shan Wang, Yufei Xue, Zihan Wang, Lei Shen, Andi Wang, Yang Li, Teng Su, Zhilin Yang, Jie Tang",
-        "gitlab": "THUDM/CodeGeeX",
-        "date": "30 Mar 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/b244a543-9038-41c9-9033-e5b7932b071c.jpg",
-        "abstract": "Large pre-trained code generation models, such as OpenAI Codex, can generate syntax- and function-correct code, making the coding of programmers more productive and our pursuit of artificial general intelligence closer. In this paper, we introduce CodeGeeX, a multilingual model with 13 billion parameters for code generation. CodeGeeX is pre-trained on 850 billion tokens of 23 programming languages as of June 2022. Our extensive experiments suggest that CodeGeeX outperforms multilingual code models of similar scale for both the tasks of code generation and translation on HumanEval-X. Building upon HumanEval (Python only), we develop the HumanEval-X benchmark for evaluating multilingual models by hand-writing the solutions in C++, Java, JavaScript, and Go. In addition, we build CodeGeeX-based extensions on Visual Studio Code, JetBrains, and Cloud Studio, generating 4.7 billion tokens for tens of thousands of active users per week. Our user study demonstrates that CodeGeeX can help to increase coding efficiency for 83.4% of its users. Finally, CodeGeeX is publicly accessible and in Sep. 2022, we open-sourced its code, model weights (the version of 850B tokens), API, extensions, and HumanEval-X at https://github.com/THUDM/CodeGeeX.",
-        "strip_abstract": "Large pre-trained code generation models, such as OpenAI Codex, can generate syntax- and function-correct code, making the coding of programmers more productive and our pursuit of artificial general intelligence closer.",
-        "arxiv_url": "https://arxiv.org/pdf/2303.17568v1.pdf",
-        "entity_stars": "4,493",
-        "stars_accumulated": "0.56 stars / hour",
+        "title": "Bot or Human? Detecting ChatGPT Imposters with A Single Question",
+        "authors": "Hong Wang, Xuan Luo, Weizhi Wang, Xifeng Yan",
+        "gitlab": "hongwang600/flair",
+        "date": "10 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2305.06424.jpg",
+        "abstract": "Large language models like ChatGPT have recently demonstrated impressive capabilities in natural language understanding and generation, enabling various applications including translation, essay writing, and chit-chatting. However, there is a concern that they can be misused for malicious purposes, such as fraud or denial-of-service attacks. Therefore, it is crucial to develop methods for detecting whether the party involved in a conversation is a bot or a human. In this paper, we propose a framework named FLAIR, Finding Large language model Authenticity via a single Inquiry and Response, to detect conversational bots in an online manner. Specifically, we target a single question scenario that can effectively differentiate human users from bots. The questions are divided into two categories: those that are easy for humans but difficult for bots (e.g., counting, substitution, positioning, noise filtering, and ASCII art), and those that are easy for bots but difficult for humans (e.g., memorization and computation). Our approach shows different strengths of these questions in their effectiveness, providing a new way for online service providers to protect themselves against nefarious activities and ensure that they are serving real users. We open-sourced our dataset on https://github.com/hongwang600/FLAIR and welcome contributions from the community to enrich such detection datasets.",
+        "strip_abstract": "Large language models like ChatGPT have recently demonstrated impressive capabilities in natural language understanding and generation, enabling various applications including translation, essay writing, and chit-chatting.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.06424v1.pdf",
+        "entity_stars": "26",
+        "stars_accumulated": "0.60 stars / hour",
         "paper_task": [
-            "Code Generation"
+            "Language Modelling",
+            "Memorization",
+            "Natural Language Understanding"
         ],
         "code": [
-            "https://github.com/THUDM/CodeGeeX"
+            "https://github.com/hongwang600/flair"
         ]
     },
     {
-        "title": "InstructUIE: Multi-task Instruction Tuning for Unified Information Extraction",
-        "authors": "Xiao Wang, Weikang Zhou, Can Zu, Han Xia, Tianze Chen, Yuansen Zhang, Rui Zheng, Junjie Ye, Qi Zhang, Tao Gui, Jihua Kang, Jingsheng Yang, Siyuan Li, Chunsai Du",
-        "gitlab": "beyonderxx/instructuie",
-        "date": "17 Apr 2023",
-        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2304.08085.jpg",
-        "abstract": "Large language models have unlocked strong multi-task capabilities from reading instructive prompts. However, recent studies have shown that existing large models still have difficulty with information extraction tasks. For example, gpt-3.5-turbo achieved an F1 score of 18.22 on the Ontonotes dataset, which is significantly lower than the state-of-the-art performance. In this paper, we propose InstructUIE, a unified information extraction framework based on instruction tuning, which can uniformly model various information extraction tasks and capture the inter-task dependency. To validate the proposed method, we introduce IE INSTRUCTIONS, a benchmark of 32 diverse information extraction datasets in a unified text-to-text format with expert-written instructions. Experimental results demonstrate that our method achieves comparable performance to Bert in supervised settings and significantly outperforms the state-of-the-art and gpt3.5 in zero-shot settings.",
-        "strip_abstract": "Large language models have unlocked strong multi-task capabilities from reading instructive prompts.",
-        "arxiv_url": "https://arxiv.org/pdf/2304.08085v1.pdf",
-        "entity_stars": "42",
-        "stars_accumulated": "0.56 stars / hour",
+        "title": "SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation",
+        "authors": "Wenxuan Zhang, Xiaodong Cun, Xuan Wang, Yong Zhang, Xi Shen, Yu Guo, Ying Shan, Fei Wang",
+        "gitlab": "winfredy/sadtalker",
+        "date": "22 Nov 2022",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/fd3ca42e-002c-4af5-881c-940a0c1303d4.jpg",
+        "abstract": "Generating talking head videos through a face image and a piece of speech audio still contains many challenges. ie, unnatural head movement, distorted expression, and identity modification. We argue that these issues are mainly because of learning from the coupled 2D motion fields. On the other hand, explicitly using 3D information also suffers problems of stiff expression and incoherent video. We present SadTalker, which generates 3D motion coefficients (head pose, expression) of the 3DMM from audio and implicitly modulates a novel 3D-aware face render for talking head generation. To learn the realistic motion coefficients, we explicitly model the connections between audio and different types of motion coefficients individually. Precisely, we present ExpNet to learn the accurate facial expression from audio by distilling both coefficients and 3D-rendered faces. As for the head pose, we design PoseVAE via a conditional VAE to synthesize head motion in different styles. Finally, the generated 3D motion coefficients are mapped to the unsupervised 3D keypoints space of the proposed face render, and synthesize the final video. We conducted extensive experiments to demonstrate the superiority of our method in terms of motion and video quality.",
+        "strip_abstract": "We present SadTalker, which generates 3D motion coefficients (head pose, expression) of the 3DMM from audio and implicitly modulates a novel 3D-aware face render for talking head generation.",
+        "arxiv_url": "https://arxiv.org/pdf/2211.12194v2.pdf",
+        "entity_stars": "3,367",
+        "stars_accumulated": "0.58 stars / hour",
+        "paper_task": [
+            "Talking Head Generation"
+        ],
+        "code": [
+            "https://github.com/winfredy/sadtalker"
+        ]
+    },
+    {
+        "title": "Panda LLM: Training Data and Evaluation for Open-Sourced Chinese Instruction-Following Large Language Models",
+        "authors": "Fangkai Jiao, Bosheng Ding, Tianze Luo, Zhanfeng Mo",
+        "gitlab": "dandelionsllm/pandallm",
+        "date": "4 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/cfc9ca45-a943-4aa1-833c-17649250a4d0.jpg",
+        "abstract": "This project focuses on enhancing open-source large language models through instruction-tuning and providing comprehensive evaluations of their performance. We explore how various training data factors, such as quantity, quality, and linguistic distribution, influence the performance of instruction-tuned models trained on publicly accessible high-quality instruction datasets for both English and Chinese languages. Our goal is to supplement evaluation with quantitative analyses, providing valuable insights for the continued advancement of open-source chat models. Our model, data, and code are publicly available for others to use and build upon.",
+        "strip_abstract": "This project focuses on enhancing open-source large language models through instruction-tuning and providing comprehensive evaluations of their performance.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.03025v1.pdf",
+        "entity_stars": "588",
+        "stars_accumulated": "0.57 stars / hour",
+        "paper_task": [
+            "Instruction Following"
+        ],
+        "code": [
+            "https://github.com/dandelionsllm/pandallm"
+        ]
+    },
+    {
+        "title": "WizardLM: Empowering Large Language Models to Follow Complex Instructions",
+        "authors": "Can Xu, Qingfeng Sun, Kai Zheng, Xiubo Geng, Pu Zhao, Jiazhan Feng, Chongyang Tao, Daxin Jiang",
+        "gitlab": "nlpxucan/wizardlm",
+        "date": "24 Apr 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/7145d7a2-6881-486f-b082-0626a35a9e43.jpg",
+        "abstract": "Training large language models (LLM) with open-domain instruction following data brings colossal success. However, manually creating such instruction data is very time-consuming and labor-intensive. Moreover, humans may struggle to produce high-complexity instructions. In this paper, we show an avenue for creating large amounts of instruction data with varying levels of complexity using LLM instead of humans. Starting with an initial set of instructions, we use our proposed Evol-Instruct to rewrite them step by step into more complex instructions. Then, we mix all generated instruction data to fine-tune LLaMA. We call the resulting model WizardLM. Human evaluations on a complexity-balanced test bed show that instructions from Evol-Instruct are superior to human-created ones. By analyzing the human evaluation results of the high complexity part, we demonstrate that outputs from our WizardLM model are preferred to outputs from OpenAI ChatGPT. Even though WizardLM still lags behind ChatGPT in some aspects, our findings suggest that fine-tuning with AI-evolved instructions is a promising direction for enhancing large language models. Our codes and generated data are public at https://github.com/nlpxucan/WizardLM",
+        "strip_abstract": "By analyzing the human evaluation results of the high complexity part, we demonstrate that outputs from our WizardLM model are preferred to outputs from OpenAI ChatGPT.",
+        "arxiv_url": "https://arxiv.org/pdf/2304.12244v1.pdf",
+        "entity_stars": "1,566",
+        "stars_accumulated": "0.55 stars / hour",
+        "paper_task": [
+            "Instruction Following"
+        ],
+        "code": [
+            "https://github.com/nlpxucan/wizardlm"
+        ]
+    },
+    {
+        "title": "Pretraining Without Attention",
+        "authors": "Junxiong Wang, Jing Nathan Yan, Albert Gu, Alexander M. Rush",
+        "gitlab": "jxiw/bigs",
+        "date": "20 Dec 2022",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/4a923fd9-6777-490f-984e-18a8f6bccc38.jpg",
+        "abstract": "Transformers have been essential to pretraining success in NLP. While other architectures have been used, downstream accuracy is either significantly worse, or requires attention layers to match standard benchmarks such as GLUE. This work explores pretraining without attention by using recent advances in sequence routing based on state-space models (SSMs). Our proposed model, Bidirectional Gated SSM (BiGS), combines SSM layers with a multiplicative gating architecture that has been effective in simplified sequence modeling architectures. The model learns static layers that do not consider pair-wise interactions. Even so, BiGS is able to match BERT pretraining accuracy on GLUE and can be extended to long-form pretraining of 4096 tokens without approximation. Analysis shows that while the models have similar average accuracy, the approach has different inductive biases than BERT in terms of interactions and syntactic representations. All models from this work are available at https://github.com/jxiw/BiGS.",
+        "strip_abstract": "Even so, BiGS is able to match BERT pretraining accuracy on GLUE and can be extended to long-form pretraining of 4096 tokens without approximation.",
+        "arxiv_url": "https://arxiv.org/pdf/2212.10544v2.pdf",
+        "entity_stars": "54",
+        "stars_accumulated": "0.55 stars / hour",
         "paper_task": [],
         "code": [
-            "https://github.com/beyonderxx/instructuie"
+            "https://github.com/jxiw/bigs"
+        ]
+    },
+    {
+        "title": "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention",
+        "authors": "Renrui Zhang, Jiaming Han, Aojun Zhou, Xiangfei Hu, Shilin Yan, Pan Lu, Hongsheng Li, Peng Gao, Yu Qiao",
+        "gitlab": "Lightning-AI/lit-llama",
+        "date": "28 Mar 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/c278a6af-eb5e-471f-880d-45a5684d50f0.jpg",
+        "abstract": "We present LLaMA-Adapter, a lightweight adaption method to efficiently fine-tune LLaMA into an instruction-following model. Using 52K self-instruct demonstrations, LLaMA-Adapter only introduces 1.2M learnable parameters upon the frozen LLaMA 7B model, and costs less than one hour for fine-tuning on 8 A100 GPUs. Specifically, we adopt a set of learnable adaption prompts, and prepend them to the input text tokens at higher transformer layers. Then, a zero-init attention mechanism with zero gating is proposed, which adaptively injects the new instructional cues into LLaMA, while effectively preserves its pre-trained knowledge. With efficient training, LLaMA-Adapter generates high-quality responses, comparable to Alpaca with fully fine-tuned 7B parameters. Furthermore, our approach can be simply extended to multi-modal input, e.g., images, for image-conditioned LLaMA, which achieves superior reasoning capacity on ScienceQA. We release our code at https://github.com/ZrrSkywalker/LLaMA-Adapter.",
+        "strip_abstract": "We present LLaMA-Adapter, a lightweight adaption method to efficiently fine-tune LLaMA into an instruction-following model.",
+        "arxiv_url": "https://arxiv.org/pdf/2303.16199v1.pdf",
+        "entity_stars": "3,689",
+        "stars_accumulated": "0.54 stars / hour",
+        "paper_task": [
+            "Instruction Following",
+            "Language Modelling",
+            "Multimodal Deep Learning",
+            "Visual Question Answering (VQA)"
+        ],
+        "code": [
+            "https://github.com/zrrskywalker/llama-adapter",
+            "https://github.com/Lightning-AI/lit-llama"
+        ]
+    },
+    {
+        "title": "Towards Building the Federated GPT: Federated Instruction Tuning",
+        "authors": "Jianyi Zhang, Saeed Vahidian, Martin Kuo, Chunyuan Li, Ruiyi Zhang, Guoyin Wang, Yiran Chen",
+        "gitlab": "jayzhang42/federatedgpt-shepherd",
+        "date": "9 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/a6c5aceb-c3c4-4c89-9a82-abd0e6409d7e.jpg",
+        "abstract": "While ``instruction-tuned\" generative large language models (LLMs) have demonstrated an impressive ability to generalize to new tasks, the training phases heavily rely on large amounts of diverse and high-quality instruction data (such as ChatGPT and GPT-4). Unfortunately, acquiring high-quality data, especially when it comes to human-written data, can pose significant challenges both in terms of cost and accessibility. Moreover, concerns related to privacy can further limit access to such data, making the process of obtaining it a complex and nuanced undertaking. Consequently, this hinders the generality of the tuned models and may restrict their effectiveness in certain contexts. To tackle this issue, our study introduces a new approach called Federated Instruction Tuning (FedIT), which leverages federated learning (FL) as the learning framework for the instruction tuning of LLMs. This marks the first exploration of FL-based instruction tuning for LLMs. This is especially important since text data is predominantly generated by end users. Therefore, it is imperative to design and adapt FL approaches to effectively leverage these users' diverse instructions stored on local devices, while preserving privacy and ensuring data security. In the current paper, by conducting widely used GPT-4 auto-evaluation, we demonstrate that by exploiting the heterogeneous and diverse sets of instructions on the client's end with the proposed framework FedIT, we improved the performance of LLMs compared to centralized training with only limited local instructions. Further, in this paper, we developed a Github repository named Shepherd. This repository offers a foundational framework for exploring federated fine-tuning of LLMs using heterogeneous instructions across diverse categories.",
+        "strip_abstract": "This repository offers a foundational framework for exploring federated fine-tuning of LLMs using heterogeneous instructions across diverse categories.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.05644v1.pdf",
+        "entity_stars": "58",
+        "stars_accumulated": "0.52 stars / hour",
+        "paper_task": [
+            "Federated Learning"
+        ],
+        "code": [
+            "https://github.com/jayzhang42/federatedgpt-shepherd"
+        ]
+    },
+    {
+        "title": "Track Anything: Segment Anything Meets Videos",
+        "authors": "Jinyu Yang, Mingqi Gao, Zhe Li, Shang Gao, Fangjing Wang, Feng Zheng",
+        "gitlab": "gaomingqi/track-anything",
+        "date": "24 Apr 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/a271a052-2b62-45de-aeab-25dceba63569.jpg",
+        "abstract": "Recently, the Segment Anything Model (SAM) gains lots of attention rapidly due to its impressive segmentation performance on images. Regarding its strong ability on image segmentation and high interactivity with different prompts, we found that it performs poorly on consistent segmentation in videos. Therefore, in this report, we propose Track Anything Model (TAM), which achieves high-performance interactive tracking and segmentation in videos. To be detailed, given a video sequence, only with very little human participation, i.e., several clicks, people can track anything they are interested in, and get satisfactory results in one-pass inference. Without additional training, such an interactive design performs impressively on video object tracking and segmentation. All resources are available on {https://github.com/gaomingqi/Track-Anything}. We hope this work can facilitate related research.",
+        "strip_abstract": "Therefore, in this report, we propose Track Anything Model (TAM), which achieves high-performance interactive tracking and segmentation in videos.",
+        "arxiv_url": "https://arxiv.org/pdf/2304.11968v2.pdf",
+        "entity_stars": "4,318",
+        "stars_accumulated": "0.50 stars / hour",
+        "paper_task": [
+            "Image Segmentation",
+            "Object Tracking",
+            "Semantic Segmentation",
+            "Video Object Tracking"
+        ],
+        "code": [
+            "https://github.com/gaomingqi/track-anything"
+        ]
+    },
+    {
+        "title": "ZipIt! Merging Models from Different Tasks without Training",
+        "authors": "George Stoica, Daniel Bolya, Jakob Bjorner, Taylor Hearn, Judy Hoffman",
+        "gitlab": "gstoica27/zipit",
+        "date": "4 May 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/82b2d85f-dac9-440a-ac5b-b0222b9bc1fe.jpg",
+        "abstract": "Typical deep visual recognition models are capable of performing the one task they were trained on. In this paper, we tackle the extremely difficult problem of combining completely distinct models with different initializations, each solving a separate task, into one multi-task model without any additional training. Prior work in model merging permutes one model to the space of the other then adds them together. While this works for models trained on the same task, we find that this fails to account for the differences in models trained on disjoint tasks. Thus, we introduce \"ZipIt!\", a general method for merging two arbitrary models of the same architecture that incorporates two simple strategies. First, in order to account for features that aren't shared between models, we expand the model merging problem to additionally allow for merging features within each model by defining a general \"zip\" operation. Second, we add support for partially zipping the models up until a specified layer, naturally creating a multi-head model. We find that these two changes combined account for a staggering 20-60% improvement over prior work, making the merging of models trained on disjoint tasks feasible.",
+        "strip_abstract": "While this works for models trained on the same task, we find that this fails to account for the differences in models trained on disjoint tasks.",
+        "arxiv_url": "https://arxiv.org/pdf/2305.03053v1.pdf",
+        "entity_stars": "127",
+        "stars_accumulated": "0.47 stars / hour",
+        "paper_task": [],
+        "code": [
+            "https://github.com/gstoica27/zipit"
+        ]
+    },
+    {
+        "title": "mPLUG-Owl: Modularization Empowers Large Language Models with Multimodality",
+        "authors": "Qinghao Ye, Haiyang Xu, Guohai Xu, Jiabo Ye, Ming Yan, Yiyang Zhou, Junyang Wang, Anwen Hu, Pengcheng Shi, Yaya Shi, Chenliang Li, Yuanhong Xu, Hehong Chen, Junfeng Tian, Qian Qi, Ji Zhang, Fei Huang",
+        "gitlab": "x-plug/mplug-owl",
+        "date": "27 Apr 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/e133fb44-146d-4ef1-9ebe-1b0eb9653cf8.gif",
+        "abstract": "Large language models (LLMs) have demonstrated impressive zero-shot abilities on a variety of open-ended tasks, while recent research has also explored the use of LLMs for multi-modal generation. In this study, we introduce mPLUG-Owl, a novel training paradigm that equips LLMs with multi-modal abilities through modularized learning of foundation LLM, a visual knowledge module, and a visual abstractor module. This approach can support multiple modalities and facilitate diverse unimodal and multimodal abilities through modality collaboration. The training paradigm of mPLUG-Owl involves a two-stage method for aligning image and text, which learns visual knowledge with the assistance of LLM while maintaining and even improving the generation abilities of LLM. In the first stage, the visual knowledge module and abstractor module are trained with a frozen LLM module to align the image and text. In the second stage, language-only and multi-modal supervised datasets are used to jointly fine-tune a low-rank adaption (LoRA) module on LLM and the abstractor module by freezing the visual knowledge module. We carefully build a visually-related instruction evaluation set OwlEval. Experimental results show that our model outperforms existing multi-modal models, demonstrating mPLUG-Owl's impressive instruction and visual understanding ability, multi-turn conversation ability, and knowledge reasoning ability. Besides, we observe some unexpected and exciting abilities such as multi-image correlation and scene text understanding, which makes it possible to leverage it for harder real scenarios, such as vision-only document comprehension. Our code, pre-trained model, instruction-tuned models, and evaluation set are available at https://github.com/X-PLUG/mPLUG-Owl. The online demo is available at https://www.modelscope.cn/studios/damo/mPLUG-Owl.",
+        "strip_abstract": "Our code, pre-trained model, instruction-tuned models, and evaluation set are available at https://github. com/X-PLUG/mPLUG-Owl.",
+        "arxiv_url": "https://arxiv.org/pdf/2304.14178v1.pdf",
+        "entity_stars": "719",
+        "stars_accumulated": "0.43 stars / hour",
+        "paper_task": [],
+        "code": [
+            "https://github.com/x-plug/mplug-owl"
+        ]
+    },
+    {
+        "title": "Enhancing Suno's Bark Text-to-Speech Model: Addressing Limitations Through Meta's Encodec and Pre-Trained Hubert",
+        "authors": "Social Science Research Network (SSRN) 2023, Devin Schumacher, Francis LaBounty Jr.",
+        "gitlab": "serp-ai/bark-with-voice-clone",
+        "date": "Devin Schumacher",
+        "cover_img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/v/wgALCACcAPIBAREA/8QAGgABAAMBAQEAAAAAAAAAAAAAAAECAwQFB//aAAgBAQAAAAD7MzwvSN7iZFOeUa6BYIACQgASHP5ukY6RefVkMfLFs7q9vcGPlWvvtEW6JDHx4tEWW6duwMuCnVvdC0yMfMrMXrMOr0DPQK8/RYBh460VSjv9Ew3cfNE1tEdfYGHjwiQ7fTMdnJ5ts9cbW6/RDHx9J00hMdPSYbuHzwT1+kGHlVshC3X6Jlq4OBW0J6/TDHyEpRDt9A5ulw+fIpPd6IYeTNaXgju9I5+hzZkyrtuGHjXotEJ7vRMds+N0JsrG1hh5GsRInp9Apfl8nSkaRER6PeMPHibUmYd3ohycFF6TbLXt7Rl49kxFkdfoByeXE2gPQ7hj5kDTVHR1By+Ulbalo7esZePVJEz2eiHNwTRpES7eoYeNMm0zXr7QQASCAkAAAAAA/8QARBAAAQIEBAMDCQYCCAcAAAAAAQIRAAMSIQQiMUETUWEgMnEUQlJTgZGSodIQI2JyscEzggUVMEOywtHhJVBjg6Li8P/aAAgBAQABPwD7JsxEpNS3Z9hAxshW6vamFY6QBSCpmcmk3jy3Du1RdvRMeWyPxb7QifKmJfiAD8RAMcSX61HxCOJL9aj4hHEl+tR8QjiS/Wo+IQlSVXBB8OytaZaSsuw5XMDGyDur4THlmHBFSlN0EDG4Z0grVf8ACY8tkA+d7ujxLnypossJu2a36xxJfrUfEI4kv1qPiEcSX61HxCOJL9aj4hCVoVooFuRB7bQ0MIaGENDQ0N22hoaGhoaGhobt4pKjKSUpWpQWCySBcDrBkTuIU8HEFIQKSJkCStCFAyMSSTS3EHi4e4jgTV/3E8fdqDmYNnMS5U8S01YfEA0s3FG8GXNKlPhp7gG9Y3uYRJmAk+T4q3OcCCDAkrRUgycQb+s6C14lCdJWFeS4hwNFTX1iWoqQklNJa437WIJEhZqIYbf7EQVTEqvMWvnmJPzMCYqnvzXI0BVcDdnhJWy0ibNuARmLc2N4K10AJVMaom5O1ucKWpOi16g6n3C8GYqkATJhdIUTUf8AWAtZDmYsBRYgEi7WJvFazetYZ9CQ55i+ggLXQ9czVjc7XBGbpeMGqYVLClL0diS3uJPaxC1ysPMmpF0pJDgm/gI/rOeXHDRYA9xfytH9Y4kG0lB0d0riVjcTNWEhEpibuFJYjqee0FeNSWrwju2qof8ApIKZYw4TyBLiP+IpAfyZwDuqHx/o4d3NnVD/ANIecnDMlmuq/Ptzx9xMgIUSrJdSg3QcrogBbVUlh063bJApNR4YJoZ2azajJCwqsIEogPZmb/BAdRYS7MNRy3aiAkpJFD1ADTYl7mmEpdYGjHMKf/SFoqUAlDOCdAO9sTSbQcJNopCUhyTqDrt3YwsmZJWpUwAkjof0A7U8VSljZoTIFKqjt01282BJQGdStDsD/lhpRDDCyc7+b/tAQ1+BLChcEc/GAuaRdCQwtfeHnAAGUBfZUBU0A5Eu/PURVOBfhoZvSiqfSAZaQOioS7XDHs4h+BMpd+j/ALQFYipSq5j1EtmaxgzJ6iDXNA/mEVYgZeLMcHV1N1hUydmzzRcDzm5XhM2ezErIALd57wlWJ0rVozur3nqI404pAK5hsdXcPAXPA/iTDcEOVN1fpzjiT1IU0+a4OgKmbk3XaMEpajMqUs6M7sx8ewpZC0JYZnv2lEJSSdADAxkj0lb+araEqC0gh/7HEgnDzbPaACDdDAj0X/ywAaVEAkOLFIZjcuKYTSSoLTqb5dhv3YZnZPeHogOeRywpx5jdKdnd3pgXD8N7uMov7aYZyAUX3yjU6EZYSbPQXceaNGZjkhgKshII9EC4Gtk7RgaUTJlIbKGdIHzAHYmBPFlO7uw+3GTZklMpSDS5IuAQfiIjyycxzp0GyPq32jyueQghY3csnQFnOaPLcQBaYnfZLBjzq3g4ue7CaguAQQE8nI70HGTtRMTSSbCm3JzVHlU/O01BbonX4oGMnN30gnQsn6ow09cxS0LLlIHIfIE9rFMJExzYC52+ZECkJJtrrlZjoO9vAoc0KRoXLp+qGsHYpb8IcbF6oKdVOl30NPi9lQwcl0aVG6d+ZqiuWQTUlrFnT4t3oK0VIUogP1T9UAJrOZJb8rtyOYQVpJLs2pNSfec0YFwuYOmzbnoT2FpPElnl1+3GAkSmPnOYZRSbqYEWYwmu916cjpAE0AKClM+jK8XhKZgUkVZb830eEhdR7zvfKq29oNYSKTMuepNrgRnIIzBm5xgCqpddVwOfuv2p5AkTCz87tBnKyjhKuLffubmEzJJCCAus1Onim3K7bwFyyShpgDH+931iVikSyQlBU4vVMew8YONQkkcNOo86DjkDWSjR+8x0sIOPSADwUFiXFUeXJJJEpDc6oTjk+pR8Vud4w+JE5JAQlJ5gu47E5IM2UerdT9uOAaUpQBYksQP3BikLBLAgBzYaD+WAUJqJSl0EAaAC9/NgSwQ6ikWdIZJ6N3YCEM+VmLlh4ADLBSjLQ1RA2S9v5YNBALJABdwA7kad2DQVnKDUXGn0xgQApdLMwGwvzLAX7WI/gTS7MIrCSkVMFdSzfFCiR3Cq4uXP1wlVNSnLgMG32Nq4JCqVIW6SATc2ItfNFVyxNLDe/Mh64Qq9lE2F3JAHUFcBgSKncWAVt1zwTQs0qcbXP1xUXJQTpZy4Jf8ANGBupTLfLe5+pXYXTUhwdbfbjikCU5bMWNtvEiEmSUqU6fykpfqRmMApWoqWpABFjlNvi2gKTW6KEtoTT7hmgkOFClgAxBToLP3rw8oVBJSU+KSTyHeitIAKVIcuGdL2/mjKCFGit+afq2jAlNS6WYgOA37E9rEXkTNTbaGXSbKPiFQEqEtIZT39ODWbivXep290KQqsd9ir8UfeubHR/OZjztAExKu6dCfOOsULJCVAsx9IfNoomFQSkHT8XtctBrKRlUGJvnFjtaMI4mTHfu9dSeoHYmPxpXRzq32492lBKtyDc/sRCipqRU4Ja5frvAKl00k3e9SmbbeApVBcKIW7ZiSCC/OAVl1Mpw1gSA24Z4SCFJJfTYq92sJMzM9TXu6oeYALKuPSPsa/vjAllzE3YJDFyR89+1iQ+Hm+EBCQFOhLAg2A3tsmKQKXS4f0R+yYEpgykC4CgaRpo/djLQAEpITfuh3NzamGTnYOLWpAB/8AGGSAKqXYgApH0wJYXYAEhJLsNtfNgJS4pCdC2UajbuxQhLg0/CPpjAUoUqlrJ2ABHuA7E0gTpIa/24qRMmpllIFlbtf3vAwMtkitT1Pon/SPIZQdpqz1pTbwtBwEtOk1TX2T8rQMDKRUAslwdUps5flBwaCqqshmsEpa3sg4GVRQJqtX0SfZpHkMpg61Fgdkt+kSZCcO9BOjdrEgnDzOohwprjvDcOwDenBpzmtJYgBlA7vuoawKarFg97gsDv34eqkunW5qBDnfvxlD5gq17jc7OuAZa1K00bUe+yoKgzq97j64fapKrhr/ADGeHpW+uYt4gOWzbbxgjdTEHKD1f4ldiZSZso31YfZMXLQkKXMpFQ9p5QuZIU5GPWASSACGD7B9hClyWvj1jxIdoTicMkGqcDSA79dCTBxWGFuOh+Tx5ThnI4qXFm3eBisIUvx0k9DHlWG0M5IGpg4nDil5ycwcHZo8qwrPx0MG35wiZLWMiwbAn26dnEmnDzVUuw0qp35xxZYYmUpNrffJvFeHPDFKiqlVSeJoRdoE2Tmsq/8A1RYQlclxZTOX+9EBcmwCVEjfijeEqkrWkUqur1oLEwJkpZahVyA3FHhBXLZJSkn/ALoF4E2TsFNofvRvGBWhSpgTsH79XYXKUtcpaQLK15Dp9mMLSX0zD3+wiBMprZdyDurm+lWkJmyyUlSrgAakfuYTNSE1BZqL8/qgTE0jPZR5qsxv50GclVQqLFtzzf0oM1NKVPoOov8AFCZwpRUvUHcmzsbFUCZa6wlNYa523JqgTUJ881NuSR4gVRgS6ZmaoOObc9yeziLSJhJZh+/QiEzaTaYk1CxrNiDuCreOLRMAE3QjckN8UKmKa0zQ2zKcj4orBBHE5XdXzIVHGJDVl9NVfVCZpQjvVOB5x9zFUFaQtbLVswqJv8UJnJNIqOYWuoC5/NHECVBlr7ujk33PejCF5s3M7dSf1J7WMfg2d6hcP+wMCtySP8XuAaE1oqF9WqdRitQU4QXc+kRDTSQdAWsaoVxGDVAPap39whllKmqLE2ze0aQagpikgsQ92gVM33tifNUzn3wtJzXU9JbXV9hGDJKVkvc7uwO7A9md/Ama6bPz6RQqnKVi93CopUaznYFwCFOx5W1EC6Ug197XNoTvaAVBSXqZ9KVaO1zCEqBAIL30qIZnNzA4h0SagTso9eUFCwVJShbubmqGnJAFKyRoWURbq0JQthlWHd1Mva9i1jGCCwZhJmMQLF2J53btY5uAHSGKhqx/V4QwS4Sip2DAC50L0wlIpUEoTUw2Gu75YSxCaqT/ACi3hlhgKsqanLJ263pgukJypPsAZ7sGTCQkqJpFz3up1bLCSWvTY8hY/DCkprC2DML9fCmFBTOyWYt0cuwyxgmoWKnzPpz9g7M8pEiY6QrmGe0Fctv4EuncUX5WvFaEkEYeWwGyNzqNYUZaWPk0km+iLatzipAAeRKY7BHXxh0BlDDShfZG2+8JWJc0FMmSDoFBNx1d4GMnsFAJ5EU38dYVjZ4SCEpYbUm/zgYyaQkMH/L+t4w8+ZOKgsJAADMGL+89rHCiQKtah7PmIUoNUVgXA2DsPzRfYakdf0XAWSgFw1Vm2O7mqEswLPbRwLbHvQhKpgKpSSWIdm+qBJmgh5KwQD0v8UHD4hiOHM6KIt8lQJGINVcte75WLt0VaPJppPcWLlzZmO/etGFRMlhYUCASGGn7nsz0k4eYWgoTsDcFstgfhhQVSzZnG23wQgppFSdzsbvsRRtBQzdW832sMsFICj0u9L9LimGSbeaw835HLttFIYkCm92HsFqIUAUWAcFrp2ezZYIBWSALAKulnL/ljAUpK2QAGFv/AJKXHaxa+HKCn84Ws3zhWIWCKlpLEOcjGFYgs6VpsTsnePKFKy1jk2RyYOJLJNYFiPMhGJmFQZYFrjKSwudI8tm6ibQCXDlNgdhBxeILATyHc1Oi40eDjJ2qZoFNjdELxU4FuKxYAd2MJOM5MxSluxDANy5p7OJKfJprnboPmY+7LVKCRbdIc6iF2KGUgAh3NNhyEKUkE5k3A9GKkoPeSXAOqYSkzCEICSQNHTdi0HDT1XMq9ncJctaPJcSpLcKk7d0uXYuIGGxA1kh7MclgIGDxANpJKf5RbxjCypktRrQ2UDbbw/s97AdkBu0w+1hyjcMN7/8AKP/Z",
+        "abstract": "Bark, a transformer-based text-to-audio model by Suno, generates highly realistic, multilingual speech as well as other audio, including music, background noise, and simple sound effects. While this model has shown promising results, its generative nature can lead to deviations in the output based on provided prompts. In this paper, we propose a novel approach to improve the performance of Bark by leveraging Meta's encodec to extract audio codebooks and employing a pre-trained HuBert model with a linear projection head to generate semantic tokens that better match the source audio.\r\n\r\nOur method involves extracting discrete tokens from the audio codebooks using Meta's encodec and saving the fine and coarse prompts. We then use the transcript of the source audio to generate semantic tokens from the original Bark model. However, this process has limitations due to the lack of access to the wav2vec model and its associated k-means used in the original training. To overcome this, we adapt a pre-trained HuBert model with a linear projection head, training it to output tokens in the same embedding space as the unavailable model.\r\n\r\nBy incorporating these enhancements, we aim to address the limitations of Bark's generative capabilities, ultimately leading to more accurate text-to-speech outputs. Our work contributes to the ongoing development of advanced artificial intelligence for text-to-audio generation and supports the research community by providing access to pre-trained model checkpoints, which are ready for inference and available for commercial use.\r\n\r\nKeywords: Bark, ai voice cloning, Suno, text-to-speech, artificial intelligence, audio generation, Meta's encodec, audio codebooks, semantic tokens, HuBert, transformer-based model, multilingual speech, wav2vec, linear projection head, embedding space, generative capabilities, pretrained model checkpoints",
+        "strip_abstract": "Keywords: Bark, ai voice cloning, Suno, text-to-speech, artificial intelligence, audio generation, Meta's encodec, audio codebooks, semantic tokens, HuBert, transformer-based model, multilingual speech, wav2vec, linear projection head, embedding space, generative capabilities, pretrained model checkpoints",
+        "arxiv_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4443815",
+        "entity_stars": "1,206",
+        "stars_accumulated": "0.42 stars / hour",
+        "paper_task": [
+            "Audio Generation",
+            "Expressive Speech Synthesis",
+            "Speech Synthesis",
+            "Text-To-Speech Synthesis",
+            "Voice Cloning"
+        ],
+        "code": [
+            "https://github.com/serp-ai/bark-with-voice-clone",
+            "https://hub.serp.ai/serpdotai/bark-suno-enhancement-text-to-speech-ai-voice-cloning-app"
+        ]
+    },
+    {
+        "title": "Magic3D: High-Resolution Text-to-3D Content Creation",
+        "authors": "Chen-Hsuan Lin, Jun Gao, Luming Tang, Towaki Takikawa, Xiaohui Zeng, Xun Huang, Karsten Kreis, Sanja Fidler, Ming-Yu Liu, Tsung-Yi Lin",
+        "gitlab": "chinhsuanwu/dreamfusionacc",
+        "date": "18 Nov 2022",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/paper/2211.10440.jpg",
+        "abstract": "DreamFusion has recently demonstrated the utility of a pre-trained text-to-image diffusion model to optimize Neural Radiance Fields (NeRF), achieving remarkable text-to-3D synthesis results. However, the method has two inherent limitations: (a) extremely slow optimization of NeRF and (b) low-resolution image space supervision on NeRF, leading to low-quality 3D models with a long processing time. In this paper, we address these limitations by utilizing a two-stage optimization framework. First, we obtain a coarse model using a low-resolution diffusion prior and accelerate with a sparse 3D hash grid structure. Using the coarse representation as the initialization, we further optimize a textured 3D mesh model with an efficient differentiable renderer interacting with a high-resolution latent diffusion model. Our method, dubbed Magic3D, can create high quality 3D mesh models in 40 minutes, which is 2x faster than DreamFusion (reportedly taking 1.5 hours on average), while also achieving higher resolution. User studies show 61.7% raters to prefer our approach over DreamFusion. Together with the image-conditioned generation capabilities, we provide users with new ways to control 3D synthesis, opening up new avenues to various creative applications.",
+        "strip_abstract": "DreamFusion has recently demonstrated the utility of a pre-trained text-to-image diffusion model to optimize Neural Radiance Fields (NeRF), achieving remarkable text-to-3D synthesis results.",
+        "arxiv_url": "https://arxiv.org/pdf/2211.10440v2.pdf",
+        "entity_stars": "40",
+        "stars_accumulated": "0.42 stars / hour",
+        "paper_task": [
+            "High",
+            "Text to 3D"
+        ],
+        "code": [
+            "https://github.com/chinhsuanwu/dreamfusionacc"
+        ]
+    },
+    {
+        "title": "Universal Instance Perception as Object Discovery and Retrieval",
+        "authors": "Bin Yan, Yi Jiang, Jiannan Wu, Dong Wang, Ping Luo, Zehuan Yuan, Huchuan Lu",
+        "gitlab": "MasterBin-IIAU/UNINEXT",
+        "date": "12 Mar 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/35e486b3-bc85-4c5e-9682-27823969beb5.jpg",
+        "abstract": "All instance perception tasks aim at finding certain objects specified by some queries such as category names, language expressions, and target annotations, but this complete field has been split into multiple independent subtasks. In this work, we present a universal instance perception model of the next generation, termed UNINEXT. UNINEXT reformulates diverse instance perception tasks into a unified object discovery and retrieval paradigm and can flexibly perceive different types of objects by simply changing the input prompts. This unified formulation brings the following benefits: (1) enormous data from different tasks and label vocabularies can be exploited for jointly training general instance-level representations, which is especially beneficial for tasks lacking in training data. (2) the unified model is parameter-efficient and can save redundant computation when handling multiple tasks simultaneously. UNINEXT shows superior performance on 20 challenging benchmarks from 10 instance-level tasks including classical image-level tasks (object detection and instance segmentation), vision-and-language tasks (referring expression comprehension and segmentation), and six video-level object tracking tasks. Code is available at https://github.com/MasterBin-IIAU/UNINEXT.",
+        "strip_abstract": "All instance perception tasks aim at finding certain objects specified by some queries such as category names, language expressions, and target annotations, but this complete field has been split into multiple independent subtasks.",
+        "arxiv_url": "https://arxiv.org/pdf/2303.06674v1.pdf",
+        "entity_stars": "1,099",
+        "stars_accumulated": "0.41 stars / hour",
+        "paper_task": [
+            "Instance Segmentation",
+            "Multi-Object Tracking and Segmentation",
+            "Multiple Object Tracking",
+            "object-detection",
+            "Object Detection",
+            "Object Discovery",
+            "Object Tracking",
+            "Referring Expression",
+            "Referring Expression Comprehension",
+            "Referring Expression Segmentation",
+            "Referring Video Object Segmentation",
+            "Retrieval",
+            "Semantic Segmentation",
+            "Video Instance Segmentation",
+            "Visual Object Tracking",
+            "Visual Tracking"
+        ],
+        "code": [
+            "https://github.com/MasterBin-IIAU/UNINEXT"
+        ]
+    },
+    {
+        "title": "Measuring Massive Multitask Chinese Understanding",
+        "authors": "Hui Zeng",
+        "gitlab": "thudm/chatglm-6b",
+        "date": "25 Apr 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/e0c13637-22da-4c1b-898c-176a96c06e8d.gif",
+        "abstract": "The development of large-scale Chinese language models is flourishing, yet there is a lack of corresponding capability assessments. Therefore, we propose a test to measure the multitask accuracy of large Chinese language models. This test encompasses four major domains, including medicine, law, psychology, and education, with 15 subtasks in medicine and 8 subtasks in education. We found that the best-performing models in the zero-shot setting outperformed the worst-performing models by nearly 22 percentage points on average. Across the four major domains, the average zero-shot accuracy of all models did not exceed 0.5. In the subdomains, only the GPT-3.5-turbo model achieved a zero-shot accuracy of 0.703 in clinical medicine, which was the highest accuracy among all models across all subtasks. All models performed poorly in the legal domain, with the highest zero-shot accuracy reaching only 0.259. By comprehensively evaluating the breadth and depth of knowledge across multiple disciplines, this test can more accurately identify the shortcomings of the models.",
+        "strip_abstract": "This test encompasses four major domains, including medicine, law, psychology, and education, with 15 subtasks in medicine and 8 subtasks in education.",
+        "arxiv_url": "https://arxiv.org/pdf/2304.12986v1.pdf",
+        "entity_stars": "24,152",
+        "stars_accumulated": "0.40 stars / hour",
+        "paper_task": [],
+        "code": [
+            "https://github.com/Felixgithub2017/MMCU",
+            "https://github.com/thudm/chatglm-6b"
+        ]
+    },
+    {
+        "title": "A Survey of Large Language Models",
+        "authors": "Wayne Xin Zhao, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, Yifan Du, Chen Yang, Yushuo Chen, Zhipeng Chen, Jinhao Jiang, Ruiyang Ren, YiFan Li, Xinyu Tang, Zikang Liu, Peiyu Liu, Jian-Yun Nie, Ji-Rong Wen",
+        "gitlab": "rucaibox/llmsurvey",
+        "date": "31 Mar 2023",
+        "cover_img": "https://production-media.paperswithcode.com/thumbnails/papergithubrepo/b734db0f-aac3-4825-b340-067ec4dca8f6.jpg",
+        "abstract": "Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models. Recently, pre-trained language models (PLMs) have been proposed by pre-training Transformer models over large-scale corpora, showing strong capabilities in solving various NLP tasks. Since researchers have found that model scaling can lead to performance improvement, they further study the scaling effect by increasing the model size to an even larger size. Interestingly, when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance improvement but also show some special abilities that are not present in small-scale language models. To discriminate the difference in parameter scale, the research community has coined the term large language models (LLM) for the PLMs of significant size. Recently, the research on LLMs has been largely advanced by both academia and industry, and a remarkable progress is the launch of ChatGPT, which has attracted widespread attention from society. The technical evolution of LLMs has been making an important impact on the entire AI community, which would revolutionize the way how we develop and use AI algorithms. In this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.",
+        "strip_abstract": "To discriminate the difference in parameter scale, the research community has coined the term large language models (LLM) for the PLMs of significant size.",
+        "arxiv_url": "https://arxiv.org/pdf/2303.18223v10.pdf",
+        "entity_stars": "1,846",
+        "stars_accumulated": "0.40 stars / hour",
+        "paper_task": [
+            "Language Modelling"
+        ],
+        "code": [
+            "https://github.com/rucaibox/llmsurvey"
         ]
     }
 ]
